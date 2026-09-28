@@ -1,6 +1,6 @@
 # Lota 27 á GitHub Pages
 
-GGJ Hlíðaskóli gnajonsdottir@gmail.com
+G. · Hlíðaskóli · gnajonsdottir@gmail.com
 
 Pakkinn inniheldur index.html (vefheftið), lota27-prent.pdf (38 síðna prenthefti) og þessar leiðbeiningar.
 
@@ -23,9 +23,19 @@ Skráin index.html er upphafssíða vefsins. PDF-hnappurinn vísar á lota27-pre
 
 MathJax birtir formúlur á vefsíðunni og hleðst af neti. PDF-skráin inniheldur formúlur og myndir og má prenta án nettengingar. Gátlisti vistast aðeins í vafra nemandans þegar vafrageymsla er tiltæk.
 
+## Breytingar 28. september 2026
+
+- Línan „9 tímar“ undir undirfyrirsögninni var fjarlægð.
+- Algildi er útskýrt með fjarlægð frá núlli, lóðréttu strikunum og einföldum dæmum. Tveir tenglar úr lesefninu vísa í skýringuna.
+- Nýr hugtakakafli útskýrir minna en, stærra en og jafnt og, með dæmum og minnishjálpinni „Opið snýr að stærri tölunni“. Táknin ≤ og ≥ eru einnig útskýrð.
+- Prentútgáfan hefur sömu hugtakaskýringar; skýringin á algildi í 2. tíma er stytt til að rúmast í núverandi uppsetningu.
+- Vatnsmerki er samræmt: G. · Hlíðaskóli · gnajonsdottir@gmail.com.
+
 ## Prófunarstaða
 
-Allir 110 innri tenglar hafa gild viðföng og auðkenni eru einstök. Heiti reglunnar er „Regla Pýþagórasar“. Kaflinn „Gögn að baki heftinu“ og fjöldi sýnidæma og mynda á forsíðu voru fjarlægð að ósk kennara. „9 tímar“ stendur áfram. Dæmi, formúlur og myndir eru varðveitt. Flakksrök voru prófuð sérstaklega. Allar 38 PDF-síðurnar voru skoðaðar. Þessi pakki hefur ekki enn verið birtur eða prófaður á GitHub Pages; skref 6 er lokaprófun eftir birtingu.
+Allir 114 innri HTML-tenglar hafa gild viðföng og öll 286 auðkenni eru einstök. Níu kennslukaflar, 59 sýnidæmi, 25 myndir og 21 atriði í gátlista varðveitast. Hugtakafærslur eru nú 29. Prentútgáfan var myndgerð og yfirfarin, sérstaklega breyttu síðurnar og hugtakakaflinn. Innri PDF-tenglar voru uppfærðir eftir breytta síðuskiptingu hugtakanna.
+
+Ekki tókst að ræsa staðbundinn vafra í þessari yfirferð; nýju tenglarnir nota óbreytt flakksrök. Skjá- og farsímabirting, MathJax-hleðsla og flakk með JavaScript voru því ekki endurprófuð í vafra. Þessi útgáfa hefur ekki verið birt eða prófuð á GitHub Pages; skref 6 er lokaprófun eftir birtingu.
 
 ## Opinberar leiðbeiningar
 
