@@ -1,0 +1,1467 @@
+<!doctype html>
+<!-- Kennaranóta · 28. september 2026 · GitHub Pages
+Sjálfstætt HTML-hefti með PDF-niðurhali úr sömu möppu.
+Efni: níu tímar, 59 sýnidæmi, 25 SVG-myndir, gátlisti og hugtök.
+Táknun: h fyrir hlið fernings; þ fyrir þvermál. Hringur samkvæmt ósk kennara.
+Vatnsmerki: GGJ Hlíðaskóli gnajonsdottir@gmail.com.
+Innri tenglar skruna aðeins innan heftisins þegar JavaScript er virkt.
+MathJax hleðst af jsDelivr og þarf nettengingu; PDF-skráin er sjálfstæð.
+PDF-síðurnar 38 voru myndgerðar og yfirfarnar. Námsefnið er óbreytt.
+Innri tenglar og flakksrök hafa verið prófuð. Útgáfa á GitHub Pages
+hefur ekki verið birt eða prófuð á raunverulegri GitHub Pages-slóð.
+-->
+<html lang="is"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="GGJ Hlíðaskóli gnajonsdottir@gmail.com"><title>Lota 27 · Ferningar, rætur og Pýþagóras</title><style>
+:root{--ink:#192124;--muted:#53636a;--blue:#0877c9;--term:#9b4100;--green:#24c95a;--cyan:#54c8f2;--magenta:#d962cf;--orange:#f4a261;--paper:#fff;--line:#d9e1e5;scroll-padding-top:6rem}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f4f6f7;color:var(--ink);font:18px/1.65 Georgia,'Times New Roman',serif}a{color:#075f9d;text-underline-offset:.18em}a:hover{color:#063c61}button,input{font:inherit}button{cursor:pointer}button,a,input{touch-action:manipulation}:focus-visible{outline:3px solid #a84704;outline-offset:5px}.skip-link{position:absolute;left:1rem;top:-10rem;background:white;padding:.6rem;z-index:99}.skip-link:focus{top:1rem}.toolbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.98);border-bottom:1px solid var(--line);font:600 14px/1.3 Arial,sans-serif}.toolbar-inner{max-width:1060px;margin:auto;display:flex;gap:1.35rem;align-items:center;padding:.8rem 1.2rem;flex-wrap:wrap}.toolbar a{color:#273a43;text-decoration:none}.toolbar .brand{margin-right:auto;letter-spacing:.06em}.toolbar .pdf-download{border:1px solid #bacbd3;border-radius:5px;background:white;padding:.5rem .8rem;font-size:13px}.book{max-width:980px;margin:0 auto;background:var(--paper);padding:0 54px;box-shadow:0 3px 40px #14262f08}.cover{padding:54px 0 18px}.eyebrow,.lesson-kicker{font:700 13px/1.5 Arial,sans-serif;letter-spacing:.13em;color:#53656d;text-align:center}.cover h1{font-size:clamp(2.3rem,5vw,3.45rem);line-height:1.09;letter-spacing:-.03em;margin:22px 0 18px;text-align:center;color:#111}.cover-subtitle{text-align:center;font-size:1.25rem;margin:.5rem 0}.cover-stats{text-align:center;font:14px/1.5 Arial,sans-serif;color:var(--muted);margin:22px 0 35px}.cover-stats span{margin:0 8px}.intro{max-width:680px;margin:28px auto}.cover h2{font-size:1.6rem;margin-top:2rem}.toc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.toc-card{display:flex;align-items:flex-start;gap:12px;border:1px solid var(--line);padding:16px 12px;color:var(--ink);text-decoration:none;border-top:3px solid #bfd2dd;min-width:0}.toc-card:hover{background:#f5fafd;border-color:#90bad1;color:var(--ink)}.toc-number{font:700 17px/1.6 Arial,sans-serif;color:#6b7f88}.toc-card strong{display:block;font-size:16px;line-height:1.4}.toc-card span span{display:block;color:var(--muted);font:13px/1.55 Arial,sans-serif;margin-top:6px}.lesson,.book-section{padding:45px 0 20px;border-top:1px solid var(--line);scroll-margin-top:5rem}.lesson>h2,.book-section>h2{text-align:center;font-size:1.85rem;line-height:1.23;margin:10px 0 24px;color:#111}.lesson h3{font-size:1.4rem;line-height:1.3;margin:34px 0 13px;break-after:avoid}.learning-goals{padding:16px 20px;background:#f4f8fa;border-left:3px solid #80a4b7;font-size:17px;margin:24px 0}p{margin:14px 0}.example{border:1.5px solid var(--edge);padding:18px 23px;margin:23px 0;--edge:#c9ebd3;--tag:var(--green);break-inside:avoid-page}.ex-cyan{--edge:#c7eaf6;--tag:var(--cyan)}.ex-magenta{--edge:#efd0ee;--tag:var(--magenta)}.example h4{font-size:1.12rem;line-height:1.5;margin:0 0 16px;break-after:avoid}.example-tag{display:inline-block;font:700 12px/1.5 Arial,sans-serif;letter-spacing:.05em;background:var(--tag);color:#111;padding:3px 8px;margin-right:8px;vertical-align:middle}.rule,.note{margin:22px 0;padding:16px 21px;border:1px solid #e4c16b;background:#fff0bb}.note{background:#fae9f8;border-color:#e8c2e3}.step{display:inline-block;font:700 13px/1.7 Arial,sans-serif;background:var(--orange);padding:2px 8px;margin-right:7px;color:#131313}.term-link,.term-demo{color:var(--term);font-weight:bold;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.18em}.term-link:hover{color:#6c2d00;background:#fff0df}.term-definition{border-top:1px solid var(--line);padding:15px 0 20px;scroll-margin-top:6rem}.term-definition h3{font-size:1.25rem;margin:0 0 8px}.term-definition:target{background:#fff7ed;box-shadow:0 0 0 12px #fff7ed}.back-to-term{font:600 14px Arial,sans-serif;border:1px solid #bc6b2b;color:#773200;background:#fff7ee;padding:10px 13px;margin-top:6px}[hidden]{display:none!important}.lesson-nav{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:33px;padding-top:18px;font:600 14px/1.5 Arial,sans-serif}.lesson-nav a{padding:8px 0}.owner{text-align:right;font:11px/1.6 Arial,sans-serif;color:#737373;margin:30px 0 8px}.math-figure{margin:24px auto;max-width:600px;break-inside:avoid}.math-figure > svg{display:block;width:100%;height:auto;max-height:410px;overflow:visible}.math-figure figcaption{font:14px/1.55 Arial,sans-serif;color:#4f626b;text-align:center;margin:9px auto 0;max-width:540px}.display-math{display:block;max-width:100%;overflow-x:auto;padding:12px 4px;margin:7px 0;text-align:center}table{border-collapse:collapse;max-width:100%;margin:14px auto}td,th{padding:7px 10px;border-bottom:1px solid var(--line)}code{font-size:.88em;background:#f4f6f7;padding:2px 3px;white-space:normal;overflow-wrap:anywhere}ul,ol{padding-left:1.55em}.check-item{display:flex;align-items:flex-start;gap:12px;margin:13px 0;cursor:pointer}.check-item input{width:19px;height:19px;flex:0 0 auto;margin:6px 0 0;accent-color:#aa4b06}.check-item:has(input:checked){color:#4f6656}.check-note{font:14px/1.6 Arial,sans-serif;color:var(--muted)}.print-watermark{display:none}
+@media(max-width:740px){.book{padding:0 24px}.toc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cover{padding-top:30px}.toolbar-inner{gap:1rem}.lesson>h2,.book-section>h2{font-size:1.6rem}.example{padding:16px}.display-math{font-size:.97em}}
+@media(max-width:460px){body{font-size:17px}.book{padding:0 16px}.toc-grid{grid-template-columns:1fr}.toc-card{padding:12px 15px}.toc-card strong{font-size:17px}.toolbar-inner{padding:10px 13px;gap:13px;font-size:12px}.toolbar .pdf-download{font-size:12px;padding:5px 8px}.toolbar .brand{width:100%;margin:0}.cover-stats{font-size:12px}.cover-stats span{margin:0 3px}.lesson{padding-top:30px}.example{padding:14px 12px}.learning-goals{font-size:16px;padding:13px}.owner{font-size:10px;text-align:center}.math-figure figcaption{font-size:12px}.lesson-nav{font-size:12px}.term-definition{scroll-margin-top:8rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@page{size:Letter;margin:18mm 18mm 21mm;@bottom-center{content:'GGJ Hlíðaskóli gnajonsdottir@gmail.com';font:8pt Arial,sans-serif;color:#777}@bottom-right{content:counter(page);font:8pt Arial,sans-serif;color:#666}}
+@media print{html{scroll-behavior:auto}body{background:white;font-size:12pt;line-height:1.48;color:black}.book{max-width:none;padding:0;box-shadow:none}.toolbar,.skip-link,.lesson-nav,.back-to-term,.owner,.check-note{display:none!important}.cover{padding:0}.cover h1{font-size:30pt}.cover-subtitle{font-size:16pt}.cover-stats{font-size:10pt}.toc-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.toc-card{padding:10px;break-inside:avoid}.toc-card strong{font-size:10pt}.toc-card span span{font-size:8pt}.toc-number{font-size:12pt}.lesson,.book-section{break-before:page;border:0;padding:0}.lesson-kicker{font-size:10pt}.lesson>h2,.book-section>h2{font-size:20pt}.lesson h3{font-size:15pt;margin-top:22px}.example{margin:14px 0;padding:12px 15px}.example h4{font-size:12pt}.example-tag{font-size:8pt}.learning-goals{font-size:11pt;padding:10px 14px}.math-figure{max-width:420px;margin:14px auto}.math-figure > svg{max-height:245px}.math-figure figcaption{font-size:9pt}.display-math{overflow:visible;font-size:11pt;padding:6px 0;break-inside:avoid}a{color:inherit}.term-link{color:#9b4100}.rule,.note{break-inside:avoid;padding:10px 14px}.step{font-size:9pt}.term-definition{break-inside:avoid}.term-definition:target{background:transparent;box-shadow:none}.check-item{break-inside:avoid;margin:8px 0}.check-item input{width:13px;height:13px;margin-top:3px}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+/* Equations are authored in LaTeX and typeset by MathJax. */
+.latex-math{font-size:1.03em}
+.display-math mjx-container[display="true"]{margin:0!important;min-width:min-content}
+.display-math mjx-container svg{max-width:none}
+.math-load-note{font:14px/1.5 Arial,sans-serif;color:#773200;padding:12px 18px;background:#fff0df}
+@media print{.math-load-note{display:none}.display-math mjx-container[display="true"]{min-width:0}.display-math mjx-container svg{max-width:100%;height:auto}}
+</style>
+<!-- LaTeX: use \(...\) inline and \[...\] for displayed equations.
+     MathJax 3.2.2 loads from jsDelivr and requires internet access.
+     Formula labels in diagrams use the data-tex attribute. -->
+<script>
+window.MathJax = {
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true},
+  svg: {fontCache: 'local'},
+  startup: {
+    pageReady: function () {
+      return MathJax.startup.defaultPageReady().then(function () {
+        document.querySelectorAll('.math-figure text[data-tex]').forEach(function (label) {
+          const container = MathJax.tex2svg(label.dataset.tex, {display: false});
+          const rendered = container.querySelector('svg');
+          if (!rendered || rendered.querySelector('[data-mml-node="merror"]')) return;
+          const box = rendered.viewBox.baseVal;
+          const size = Number(label.getAttribute('font-size')) || 22;
+          const oldBox = label.getBBox();
+          const scale = Math.min(size / 1000, oldBox.width / box.width);
+          const width = box.width * scale;
+          const height = box.height * scale;
+          let x = Number(label.getAttribute('x')) || 0;
+          const y = Number(label.getAttribute('y')) || 0;
+          const anchor = label.getAttribute('text-anchor');
+          if (anchor === 'middle') x -= width / 2;
+          if (anchor === 'end') x -= width;
+          rendered.setAttribute('x', x);
+          rendered.setAttribute('y', y + box.y * scale);
+          rendered.setAttribute('width', width);
+          rendered.setAttribute('height', height);
+          rendered.setAttribute('class', 'figure-latex');
+          rendered.style.color = label.getAttribute('fill') || '#20282d';
+          rendered.style.overflow = 'visible';
+          rendered.setAttribute('aria-label', label.textContent);
+          rendered.removeAttribute('aria-hidden');
+          label.after(rendered);
+          label.style.display = 'none';
+        });
+        document.documentElement.dataset.mathReady = 'true';
+      });
+    }
+  }
+};
+</script>
+<script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js" onerror="document.getElementById('math-load-note').hidden=false"></script>
+</head><body><a class="skip-link" href="#lota27-timi01">Beint í lesefnið</a><nav class="toolbar" aria-label="Aðalflakk"><div class="toolbar-inner"><a class="brand" href="#lota27-yfirlit">LOTA 27</a><a href="#lota27-yfirlit">Yfirlit</a><a href="#lota27-gatlisti">Gátlisti</a><a href="#lota27-hugtok">Hugtök</a><a id="download-pdf" class="pdf-download" href="lota27-prent.pdf" download="lota27-prent.pdf" type="application/pdf" title="Sæktu 38 síðna PDF, opnaðu skrána og prentaðu">Sækja PDF til prentunar</a></div></nav><main class="book"><p id="math-load-note" class="math-load-note" role="status" hidden>Ekki tókst að hlaða stærðfræðiletrinu. Tengstu netinu og endurhladdu síðuna.</p><noscript><p class="math-load-note">Virkjaðu JavaScript til að birta jöfnurnar uppsettar.</p></noscript><header class="cover" id="lota27-yfirlit"><p class="eyebrow">LOTA 27 · TÖLUR V · 10. BEKKUR</p><h1>Ferningar, rætur<br>og Pýþagóras</h1><p class="cover-subtitle">Lesefni fyrir níu kennslutíma</p><p class="cover-stats">9 tímar <span>·</span> 59 sýnidæmi <span>·</span> 25 skýringarmyndir</p><p class="intro">Hér er farið frá því að hefja tölur í annað veldi að því að finna óþekktar lengdir með jöfnum og rúmfræði. Sýnidæmin sýna aðferðirnar sem þú þarft í verkefnum lotunnar.</p><h2>Yfirlit</h2><nav class="toc-grid" aria-label="Yfirlit yfir kennslutíma"><a class="toc-card" href="#lota27-timi01"><span class="toc-number">01</span><span><strong>Ferningstölur og flatarmál</strong><span>Veldi, formerki, brot, flatarmál og yfirborð.</span></span></a><a class="toc-card" href="#lota27-timi02"><span class="toc-number">02</span><span><strong>Ferningsrætur og námundun</strong><span>Rót, nákvæmt gildi, aukastafir og markverðir tölustafir.</span></span></a><a class="toc-card" href="#lota27-timi03"><span class="toc-number">03</span><span><strong>Rætur í stæðum og formúlum</strong><span>Svigar, samlagning rótarliða og innsetning.</span></span></a><a class="toc-card" href="#lota27-timi04"><span class="toc-number">04</span><span><strong>Einfaldar annars stigs jöfnur</strong><span>Einangrun ferningsliðar og báðar lausnir.</span></span></a><a class="toc-card" href="#lota27-timi05"><span class="toc-number">05</span><span><strong>Annars stigs jöfnur áfram</strong><span>Sameining liða, veldi margfeldis og flatarmálsjöfnur.</span></span></a><a class="toc-card" href="#lota27-timi06"><span class="toc-number">06</span><span><strong>Blönduð orðadæmi</strong><span>Mynd, jafna, einingar, lengdir og stærðarbreytingar.</span></span></a><a class="toc-card" href="#lota27-timi07"><span class="toc-number">07</span><span><strong>Rótareikningur</strong><span>Margföldun, deiling, einföldun og nákvæm gildi.</span></span></a><a class="toc-card" href="#lota27-timi08"><span class="toc-number">08</span><span><strong>Pýþagórasarregla</strong><span>Langhlið, skammhliðar, hornalínur og flatarmál.</span></span></a><a class="toc-card" href="#lota27-timi09"><span class="toc-number">09</span><span><strong>Pýþagórasarreglan í orðadæmum</strong><span>Lengdir, samanlagðar vegalengdir og hæðarbreytingar.</span></span></a></nav><p><a href="#lota27-gatlisti">Sameiginlegur gátlisti</a> og <a href="#lota27-hugtok">hugtök lotunnar</a> eru aftast í heftinu.</p><aside class="note"><strong>Svona nýtir þú heftið:</strong> Lestu skýringuna, reyndu næsta skref í sýnidæminu og berðu síðan saman við lausnina. Skrifaðu einingar og hafðu nákvæm gildi í milliskrefum. <span class="term-demo">Appelsínugul, undirstrikuð hugtök</span> vísa í hugtakakaflann.</aside><p class="owner">GGJ Hlíðaskóli gnajonsdottir@gmail.com</p></header><section class="lesson" id="lota27-timi01"><p class="lesson-kicker">Lota 27 · 1. tími</p><h2>FERNINGSTÖLUR OG FLATARMÁL</h2>
+<p class="learning-goals"><strong>Þetta lærir þú:</strong> Að hefja heilar tölur, brot og
+tugabrot í annað veldi; reikna flatarmál og yfirborðsflatarmál; bera
+saman tölustæður.</p>
+<h3 id="að-hefja-tölu-í-annað-veldi">Að hefja tölu í annað veldi</h3>
+<p><a href="#lota27-hugtak-ferningstala" class="term-link" data-term="lota27-hugtak-ferningstala" id="lota27-termref001">Ferningstala</a> fæst þegar
+heil tala er margfölduð með sjálfri sér. Að reikna ferning tölu merkir
+að hefja hana í annað veldi. Til dæmis er
+<span class="latex-math">\(6^2=6\cdot6=36\)</span>.
+Við getum líka hafið brot og tugabrot í annað veldi.</p>
+<figure class="math-figure" id="fig-ferningur36"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 340" role="img" aria-labelledby="ft-ferningur36 fd-ferningur36"><title id="ft-ferningur36">Sex sinnum sex reitir</title><desc id="fd-ferningur36">Ferningur með sex röðum og sex dálkum, alls 36 einingareitum.</desc><defs><marker id="arr-ferningur36" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><rect x="185" y="35" width="216" height="216" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><line x1="221" y1="35" x2="221" y2="251" stroke="#88bfd7" stroke-width="2"></line><line x1="185" y1="71" x2="401" y2="71" stroke="#88bfd7" stroke-width="2"></line><line x1="257" y1="35" x2="257" y2="251" stroke="#88bfd7" stroke-width="2"></line><line x1="185" y1="107" x2="401" y2="107" stroke="#88bfd7" stroke-width="2"></line><line x1="293" y1="35" x2="293" y2="251" stroke="#88bfd7" stroke-width="2"></line><line x1="185" y1="143" x2="401" y2="143" stroke="#88bfd7" stroke-width="2"></line><line x1="329" y1="35" x2="329" y2="251" stroke="#88bfd7" stroke-width="2"></line><line x1="185" y1="179" x2="401" y2="179" stroke="#88bfd7" stroke-width="2"></line><line x1="365" y1="35" x2="365" y2="251" stroke="#88bfd7" stroke-width="2"></line><line x1="185" y1="215" x2="401" y2="215" stroke="#88bfd7" stroke-width="2"></line><rect x="239" y="122" width="108" height="42" fill="white" stroke="white" stroke-width="2"></rect><text x="293" y="151" text-anchor="middle" fill="#20282d" font-size="25" font-weight="bold" data-tex="6^2 = 36">6² = 36</text><text x="293" y="289" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="6\,\text{einingar}">6 einingar</text><text x="164" y="150" text-anchor="end" fill="#20282d" font-size="22" font-weight="normal" data-tex="6">6</text></g></svg><figcaption>Sex sinnum sex reitir</figcaption></figure><p>Ferningnum er skipt í sex raðir með sex einingareitum í hverri röð: alls 36 reiti.</p>
+<section class="example ex-green" id="lota27-daemi01" data-source-title="Formerki og svigar">
+<h4><span class="example-tag">DÆMI</span> Formerki og svigar</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[(-6)^2=(-6)\cdot(-6)=36,\qquad -6^2=-(6\cdot6)=-36.\]</span></span>
+Í fyrri stæðunni er
+<span class="latex-math">\(-6\)</span>
+veldisstofninn. Í síðari stæðunni er talan
+<span class="latex-math">\(6\)</span>
+hafin í annað veldi. Mínusmerkið framan við veldið gefur síðan neikvæða niðurstöðu.</p>
+</section>
+<aside class="rule">
+<p><strong>FLÝTILEIÐ:</strong> Fyrir allar rauntölur
+<span class="latex-math">\(a\)</span>
+er
+<span class="latex-math">\(a^2\geq0\)</span>.
+Margfeldi tveggja neikvæðra talna er jákvætt.</p>
+</aside>
+<section class="example ex-cyan" id="lota27-daemi02" data-source-title="Brot og tugabrot í öðru veldi">
+<h4><span class="example-tag">DÆMI</span> Brot og tugabrot í öðru
+veldi</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\left(-\frac{5}{6}\right)^2=\frac{25}{36},\qquad
+1{,}4^2=1{,}4\cdot1{,}4=1{,}96.\]</span></span> Teljari og nefnari eru báðir hafnir í annað veldi. Í tugabrotinu má fyrst reikna
+<span class="latex-math">\(14\cdot14=196\)</span>
+og síðan deila með 100, því hvor þáttur var margfaldaður með tíu.</p>
+<figure class="math-figure" id="fig-brot-i-veldi"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 340" role="img" aria-labelledby="ft-brot-i-veldi fd-brot-i-veldi"><title id="ft-brot-i-veldi">Brot í öðru veldi: 25 af 36 reitum</title><desc id="fd-brot-i-veldi">Ferningur með hlið 5/6 af einingu hefur 25 reiti af 36. Neikvætt formerki hverfur við annað veldi.</desc><defs><marker id="arr-brot-i-veldi" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><rect x="120" y="25" width="240" height="240" fill="white" stroke="#20282d" stroke-width="2"></rect><rect x="120" y="65" width="200" height="200" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><line x1="160" y1="25" x2="160" y2="265" stroke="#88bfd7" stroke-width="2"></line><line x1="120" y1="65" x2="360" y2="65" stroke="#88bfd7" stroke-width="2"></line><line x1="200" y1="25" x2="200" y2="265" stroke="#88bfd7" stroke-width="2"></line><line x1="120" y1="105" x2="360" y2="105" stroke="#88bfd7" stroke-width="2"></line><line x1="240" y1="25" x2="240" y2="265" stroke="#88bfd7" stroke-width="2"></line><line x1="120" y1="145" x2="360" y2="145" stroke="#88bfd7" stroke-width="2"></line><line x1="280" y1="25" x2="280" y2="265" stroke="#88bfd7" stroke-width="2"></line><line x1="120" y1="185" x2="360" y2="185" stroke="#88bfd7" stroke-width="2"></line><line x1="320" y1="25" x2="320" y2="265" stroke="#88bfd7" stroke-width="2"></line><line x1="120" y1="225" x2="360" y2="225" stroke="#88bfd7" stroke-width="2"></line><text x="230" y="299" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="\frac{5}{6}">5/6</text><text x="95" y="170" text-anchor="end" fill="#20282d" font-size="22" font-weight="normal" data-tex="\frac{5}{6}">5/6</text><text x="470" y="138" text-anchor="middle" fill="#20282d" font-size="25" font-weight="normal" data-tex="(-\frac{5}{6})^2">(−5/6)²</text><text x="470" y="180" text-anchor="middle" fill="#0877c9" font-size="25" font-weight="normal" data-tex="= \frac{25}{36}">= 25/36</text></g></svg><figcaption>Hlið 5/6 gefur flatarmál 25/36. Ferningur neikvæðrar tölu er líka jákvæður.</figcaption></figure></section>
+<aside class="note">
+<p><strong>MUNDU:</strong>
+<span class="latex-math">\(a^2\)</span>
+er ekki
+<span class="latex-math">\(2a\)</span>.
+Til dæmis er
+<span class="latex-math">\(8^2=64\)</span>,
+en
+<span class="latex-math">\(2\cdot8=16\)</span>.</p>
+</aside>
+<h3 id="stórar-tölur-og-samanburður">Stórar tölur og samanburður</h3>
+<p>Nota má dreifireglu til að reikna ferning stórrar tölu án þess að muna
+sérstaka formúlu.</p>
+<section class="example ex-green" id="lota27-daemi03" data-source-title="Reiknaðu í hlutum">
+<h4><span class="example-tag">DÆMI</span> Reiknaðu í hlutum</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\begin{aligned}
+46^2&amp;=46(40+6)=1840+276=2116,\\
+204^2&amp;=204(200+4)=40800+816=41616,\\
+0{,}12^2&amp;=\frac{12^2}{100^2}=\frac{144}{10000}=0{,}0144.
+\end{aligned}\]</span></span> Við töflugerð reiknarðu
+hvert
+<span class="latex-math">\(x^2\)</span>
+fyrir sig. Athugaðu til dæmis að
+<span class="latex-math">\(21^2=441\)</span>
+og
+<span class="latex-math">\(22^2=484\)</span>;
+bilið milli samliggjandi ferningstalna er ekki fast.</p>
+</section>
+<section class="example ex-magenta" id="lota27-daemi04" data-source-title="Hvaða tákn á að velja?">
+<h4><span class="example-tag">DÆMI</span> Hvaða tákn á að velja?</h4>
+<p>Bera á saman
+<span class="latex-math">\(18^2+24^2\)</span>
+og
+<span class="latex-math">\(31^2\)</span>.
+Reiknaðu gildi hvorrar stæðu áður en þú velur tákn:
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[18^2+24^2=324+576=900,\qquad31^2=961.\]</span></span>
+Því er
+<span class="latex-math">\(18^2+24^2&lt;31^2\)</span>.
+Táknin
+<span class="latex-math">\(&lt;\)</span>,
+<span class="latex-math">\(&gt;\)</span>
+og
+<span class="latex-math">\(=\)</span>
+merkja minna en, stærra en og jafnt og.</p>
+</section>
+<h3 id="flatarmál-og-yfirborð">Flatarmál og yfirborðsflatarmál</h3>
+<p><a href="#lota27-hugtak-flatarmal" class="term-link" data-term="lota27-hugtak-flatarmal" id="lota27-termref002">Flatarmál</a> segir til um stærð flatar.
+Fyrir ferning með hliðarlengd
+<span class="latex-math">\(h\)</span>
+er
+<span class="latex-math">\(F=h^2\)</span>.
+Fyrir hring er
+<span class="latex-math">\(F=\pi r^2\)</span>,
+þar sem
+<span class="latex-math">\(r\)</span>
+er <a href="#lota27-hugtak-radius" class="term-link" data-term="lota27-hugtak-radius" id="lota27-termref003">radíus</a>. <a href="#lota27-hugtak-thvermal" class="term-link" data-term="lota27-hugtak-thvermal" id="lota27-termref004">Þvermálið</a> er
+<span class="latex-math">\(\text{þ}=2r\)</span>.</p>
+<section class="example ex-cyan" id="lota27-daemi05" data-source-title="Tvö merki og hringlaga vatnsúði">
+<h4><span class="example-tag">DÆMI</span> Tvö merki og hringlaga
+vatnsúði</h4>
+<p>Ferningslaga merki með hlið 48 cm hefur flatarmálið
+<span class="latex-math">\(F=48^2=2304\text{ cm}^2\)</span>.</p>
+<p>Hringlaga merki með þvermál 48 cm hefur radíus
+<span class="latex-math">\(24\)</span>
+cm og því
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[F=\pi\cdot24^2=576\pi\text{ cm}^2\approx1809{,}56\text{ cm}^2.\]</span></span>
+Vatnsúðari nær 8 m frá miðju í allar áttir. Hann vökvar þá hring með
+flatarmál
+<span class="latex-math">\(64\pi\text{ m}^2\)</span>.
+Hér er gert ráð fyrir að allt svæðið innan hringsins fái vatn.</p>
+</section>
+<section class="example ex-green" id="lota27-daemi06" data-source-title="Sex fletir tenings">
+<h4><span class="example-tag">DÆMI</span> Sex fletir tenings</h4>
+<p>Teningur hefur sex eins ferningsfleti. Ef brúnin er
+<span class="latex-math">\(2{,}5\)</span>
+dm er <a href="#lota27-hugtak-yfirbord" class="term-link" data-term="lota27-hugtak-yfirbord" id="lota27-termref005">yfirborðsflatarmálið</a>
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[Y=6h^2=6\cdot2{,}5^2=6\cdot6{,}25=37{,}5\text{ dm}^2.\]</span></span>
+Þetta er flatarmál allra ytri flata, ekki rúmmál teningsins.</p>
+<figure class="math-figure" id="fig-teningsnet"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 330" role="img" aria-labelledby="ft-teningsnet fd-teningsnet"><title id="ft-teningsnet">Sex jafnstórir fletir tenings</title><desc id="fd-teningsnet">Net tenings úr sex ferningum. Hver flötur hefur hlið 2,5 dm og flatarmál 6,25 dm².</desc><defs><marker id="arr-teningsnet" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><rect x="195" y="40" width="65" height="65" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><text x="227.5" y="79.5" text-anchor="middle" fill="#20282d" font-size="18" font-weight="normal" data-tex="6{,}25">6,25</text><rect x="130" y="105" width="65" height="65" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><text x="162.5" y="144.5" text-anchor="middle" fill="#20282d" font-size="18" font-weight="normal" data-tex="6{,}25">6,25</text><rect x="195" y="105" width="65" height="65" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></rect><text x="227.5" y="144.5" text-anchor="middle" fill="#20282d" font-size="18" font-weight="normal" data-tex="6{,}25">6,25</text><rect x="260" y="105" width="65" height="65" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><text x="292.5" y="144.5" text-anchor="middle" fill="#20282d" font-size="18" font-weight="normal" data-tex="6{,}25">6,25</text><rect x="325" y="105" width="65" height="65" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></rect><text x="357.5" y="144.5" text-anchor="middle" fill="#20282d" font-size="18" font-weight="normal" data-tex="6{,}25">6,25</text><rect x="195" y="170" width="65" height="65" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><text x="227.5" y="209.5" text-anchor="middle" fill="#20282d" font-size="18" font-weight="normal" data-tex="6{,}25">6,25</text><text x="293" y="282" text-anchor="middle" fill="#20282d" font-size="25" font-weight="normal" data-tex="6 \cdot  6{,}25 = 37{,}5\,\text{dm}^2">6 · 6,25 = 37,5 dm²</text></g></svg><figcaption>Net teningsins: sex fletir, hver 6,25 dm². Myndin sýnir útbreidda fleti.</figcaption></figure></section>
+<h3 id="litaður-hluti-stærri-flötur-mínus-minni">Flatarmál litaða svæðisins</h3>
+<p>Þegar hringlaga gat er tekið úr miðju stærri hrings stendur eftir <a href="#lota27-hugtak-hringkragi" class="term-link" data-term="lota27-hugtak-hringkragi" id="lota27-termref006">svæði milli tveggja hringja með sameiginlega miðju</a>. Til að finna flatarmál svæðisins drögum við flatarmál minni hringsins frá flatarmáli þess stærri.</p>
+<figure class="math-figure" id="fig-hringkragi"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 360" role="img" aria-labelledby="ft-hringkragi fd-hringkragi"><title id="ft-hringkragi">Svæðið milli hringjanna</title><desc id="fd-hringkragi">Hringirnir hafa sömu miðju. Radíus stærri hringsins er 9 cm og radíus þess minni 5 cm. Svæðið milli hringjanna er litað.</desc><defs><marker id="arr-hringkragi" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><circle cx="300" cy="166" r="130" fill="#f8c99e" stroke="#20282d" stroke-width="2"></circle><circle cx="300" cy="166" r="72.22222222222223" fill="white" stroke="#20282d" stroke-width="2"></circle><line x1="300" y1="166" x2="300" y2="36" stroke="#20282d" stroke-width="2"></line><line x1="300" y1="36" x2="303.9146898070011" y2="44.10402392117409" stroke="#20282d" stroke-width="2"></line><line x1="300" y1="36" x2="296.0853101929989" y2="44.10402392117409" stroke="#20282d" stroke-width="2"></line><line x1="300" y1="166" x2="372.22222222222223" y2="166" stroke="#20282d" stroke-width="2"></line><line x1="372.22222222222223" y1="166" x2="364.11819830104815" y2="169.91468980700108" stroke="#20282d" stroke-width="2"></line><line x1="372.22222222222223" y1="166" x2="364.11819830104815" y2="162.08531019299892" stroke="#20282d" stroke-width="2"></line><text x="287" y="95" text-anchor="end" fill="#20282d" font-size="22" font-weight="normal" data-tex="R = 9\,\text{cm}">R = 9 cm</text><text x="346" y="194" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="r = 5\,\text{cm}">r = 5 cm</text><text x="300" y="335" text-anchor="middle" fill="#20282d" font-size="25" font-weight="bold" data-tex="81\pi  - 25\pi  = 56\pi\,\text{cm}^2">81π − 25π = 56π cm²</text></g></svg><figcaption>Svæðið milli hringjanna</figcaption></figure><section class="example ex-magenta" id="lota27-daemi07" data-source-title="Flatarmál svæðisins milli hringjanna">
+<h4><span class="example-tag">DÆMI</span> Flatarmál svæðisins milli hringjanna</h4>
+<p><strong class="step">SKREF 1</strong> Radíus stærri hringsins er
+<span class="latex-math">\(R=9\)</span>
+cm. Stærri hringurinn hefur flatarmálið
+<span class="latex-math">\(\pi R^2=81\pi\text{ cm}^2\)</span>.</p>
+<p><strong class="step">SKREF 2</strong> Radíus gatsins er
+<span class="latex-math">\(r=5\)</span>
+cm. Flatarmál þess er
+<span class="latex-math">\(\pi r^2=25\pi\text{ cm}^2\)</span>.</p>
+<p><strong class="step">SKREF 3</strong> Dragðu frá:
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[F_{\text{litað}}=81\pi-25\pi=56\pi\approx175{,}93\text{ cm}^2.\]</span></span>
+Almennt er
+<span class="latex-math">\(F_{\text{litað}}=\pi(R^2-r^2)\)</span>,
+þar sem
+<span class="latex-math">\(R&gt;r&gt;0\)</span>.</p>
+</section>
+<aside class="note">
+<p><strong>ATH.:</strong> Lengdir eru í cm, en flatarmál í
+cm<span class="latex-math">\(^2\)</span>.
+Skoðaðu nákvæmlega hvaða hluti er litaður. Ef aðeins hluti hringsins er tekinn með reiknarðu flatarmál þess hluta.</p>
+</aside>
+<nav class="lesson-nav" aria-label="Flakk eftir 1. tíma"><a href="#lota27-yfirlit">← Yfirlit</a><a href="#lota27-yfirlit">Yfirlit</a><a href="#lota27-hugtok">Hugtök</a><a href="#lota27-timi02">2. tími →</a></nav><p class="owner">GGJ Hlíðaskóli gnajonsdottir@gmail.com</p></section><section class="lesson" id="lota27-timi02"><p class="lesson-kicker">Lota 27 · 2. tími</p><h2>FERNINGSRÆTUR OG NÁMUNDUN</h2>
+<p class="learning-goals"><strong>Þetta lærir þú:</strong> Að finna ferningsrætur, greina rót
+frá ferningi og námunda samkvæmt fyrirmælum.</p>
+<h3 id="hvaða-tala-var-margfölduð-með-sjálfri-sér">Hvaða tala var
+margfölduð með sjálfri sér?</h3>
+<p><a href="#lota27-hugtak-ferningsrot" class="term-link" data-term="lota27-hugtak-ferningsrot" id="lota27-termref007">Ferningsrótin</a>
+<span class="latex-math">\(\sqrt a\)</span>
+er sú tala sem er ekki neikvæð og hefur ferninginn
+<span class="latex-math">\(a\)</span>.
+Í rauntölum er
+<span class="latex-math">\(\sqrt a\)</span>
+skilgreind þegar
+<span class="latex-math">\(a\geq0\)</span>.
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\sqrt{36}=6\quad\text{því}\quad6^2=36.\]</span></span></p>
+<figure class="math-figure" id="fig-veldi-og-rot"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 245" role="img" aria-labelledby="ft-veldi-og-rot fd-veldi-og-rot"><title id="ft-veldi-og-rot">Annað veldi og ferningsrót: frá 6 í 36 og til baka</title><desc id="fd-veldi-og-rot">Frá 6 í 36 með öðru veldi, til baka frá 36 í 6 með ferningsrót.</desc><defs><marker id="arr-veldi-og-rot" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><rect x="90" y="85" width="90" height="70" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="420" y="85" width="90" height="70" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></rect><text x="135" y="131" text-anchor="middle" fill="#20282d" font-size="32" font-weight="normal" data-tex="6">6</text><text x="465" y="131" text-anchor="middle" fill="#20282d" font-size="32" font-weight="normal" data-tex="36">36</text><path d="M160 78 Q300 -5 440 78" fill="none" stroke="#20282d" stroke-width="2"></path><line x1="428" y1="73" x2="440" y2="78" stroke="#20282d" stroke-width="2"></line><line x1="440" y1="78" x2="431.0137126085312" y2="78.49662754447249" stroke="#20282d" stroke-width="2"></line><line x1="440" y1="78" x2="434.02501246007046" y2="71.26950790077821" stroke="#20282d" stroke-width="2"></line><path d="M440 164 Q300 247 160 164" fill="none" stroke="#20282d" stroke-width="2"></path><line x1="174" y1="169" x2="160" y2="164" stroke="#20282d" stroke-width="2"></line><line x1="160" y1="164" x2="168.94855164418894" y2="163.03905074468855" stroke="#20282d" stroke-width="2"></line><line x1="160" y1="164" x2="166.31524631408462" y2="170.4123056689806" stroke="#20282d" stroke-width="2"></line><text x="300" y="35" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal">hefja í annað veldi</text><text x="300" y="228" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal">taka ferningsrót</text></g></svg><figcaption>Annað veldi og ferningsrót: frá 6 í 36 og til baka</figcaption></figure><section class="example ex-green" id="lota27-daemi08" data-source-title="Ferningur eða ferningsrót?">
+<h4><span class="example-tag">DÆMI</span> Ferningur eða ferningsrót?</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[23^2=529,\qquad\sqrt{23}\approx4{,}796,\qquad\sqrt{529}=23.\]</span></span>
+Fyrst er talan margfölduð með sjálfri sér. Í hinum tveimur tilvikunum
+leitum við að jákvæðu tölunni sem var hafin í annað veldi. Rótin
+<span class="latex-math">\(\sqrt{23}\)</span>
+er ekki heil tala, svo hér er hún námunduð að þremur aukastöfum.</p>
+</section>
+<aside class="rule">
+<p><strong>FLÝTILEIÐ:</strong> Þegar
+<span class="latex-math">\(a\geq0\)</span>
+er
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[(\sqrt a)^2=a,\qquad\sqrt a\cdot\sqrt a=a.\]</span></span>
+Fyrir hvaða rauntölu
+<span class="latex-math">\(x\)</span>
+sem er gildir hins vegar
+<span class="latex-math">\(\sqrt{x^2}=|x|\)</span>.
+Til dæmis er
+<span class="latex-math">\(\sqrt{(-6)^2}=6\)</span>,
+ekki
+<span class="latex-math">\(-6\)</span>.</p>
+</aside>
+<section class="example ex-cyan" id="lota27-daemi09" data-source-title="Rætur heiltalna og tugabrota">
+<h4><span class="example-tag">DÆMI</span> Rætur heiltalna og tugabrota</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\sqrt{144}=12,\qquad\sqrt{0{,}81}=0{,}9,\qquad
+\sqrt{0{,}0036}=0{,}06.\]</span></span> Prófun:
+<span class="latex-math">\(0{,}06\cdot0{,}06=0{,}0036\)</span>.
+Á sama hátt er
+<span class="latex-math">\(\sqrt{1024}=32\)</span>,
+því
+<span class="latex-math">\(32^2=1024\)</span>.</p>
+</section>
+<aside class="note">
+<p><strong>MUNDU:</strong>
+Ferningsrótin af 36 er ein ákveðin tala: <span class="latex-math">\(\sqrt{36}=6\)</span>. Jafnan
+<span class="latex-math">\(x^2=36\)</span>
+hefur tvær lausnir,
+<span class="latex-math">\(x=6\)</span>
+og
+<span class="latex-math">\(x=-6\)</span>.
+Nánar í <a href="#lota27-timi04">4. tíma</a>.</p>
+</aside>
+<h3 id="nákvæmt-gildi-og-nálgun">Nákvæmt gildi og nálgun</h3>
+<p>Sumar ferningsrætur er ekki hægt að skrifa sem tugabrot með endanlegum fjölda aukastafa. Þá gefur stæðan með rótartákninu <a href="#lota27-hugtak-nakvaemt" class="term-link" data-term="lota27-hugtak-nakvaemt" id="lota27-termref008">nákvæmt gildi</a>. Til dæmis er
+<span class="latex-math">\(\sqrt{13}\)</span>
+nákvæmt en
+<span class="latex-math">\(3{,}606\)</span>
+nálgun. Þar sem
+<span class="latex-math">\(3^2&lt;13&lt;4^2\)</span>
+vitum við að
+<span class="latex-math">\(3&lt;\sqrt{13}&lt;4\)</span>.</p>
+<section class="example ex-green" id="lota27-daemi10" data-source-title="Aukastafir og markverðir tölustafir">
+<h4><span class="example-tag">DÆMI</span> Aukastafir og markverðir
+tölustafir</h4>
+<p><span class="latex-math">\(\sqrt{13}=3{,}605551\ldots\)</span></p>
+<ul>
+<li><p>Þrír <a href="#lota27-hugtak-aukastafir" class="term-link" data-term="lota27-hugtak-aukastafir" id="lota27-termref009">aukastafir</a>:
+<span class="latex-math">\(\sqrt{13}\approx3{,}606\)</span>.</p></li>
+<li><p>Þrír <a href="#lota27-hugtak-markverdir" class="term-link" data-term="lota27-hugtak-markverdir" id="lota27-termref010">markverðir
+tölustafir</a>:
+<span class="latex-math">\(\sqrt{13}\approx3{,}61\)</span>.</p></li>
+</ul>
+<p>Við teljum aukastafi hægra megin við tugabrotskommuna. Markverða tölustafi teljum við frá
+fyrsta tölustafnum sem er ekki núll. Við námundun skoðum við næsta tölustaf á eftir þeim síðasta sem á að halda. Sé hann 5 eða hærri hækkum við síðasta stafinn sem við höldum um einn; annars helst hann óbreyttur.
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\sqrt{0{,}006}=0{,}0774596\ldots\]</span></span>
+Með þremur markverðum tölustöfum fæst
+<span class="latex-math">\(0{,}0775\)</span>;
+með fjórum aukastöfum fæst líka
+<span class="latex-math">\(0{,}0775\)</span>.
+Aðferðirnar eru ólíkar þótt svarið sé stundum eins.</p>
+<figure class="math-figure" id="fig-rot13"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 335" role="img" aria-labelledby="ft-rot13 fd-rot13"><title id="ft-rot13">Hvers vegna er √13 milli 3 og 4?</title><desc id="fd-rot13">Þrír ferningar hafa flatarmál 9, 13 og 16. Hlið √13 er á milli 3 og 4; teiknað í sama kvarða.</desc><defs><marker id="arr-rot13" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><rect x="45" y="114" width="96" height="96" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><text x="93.0" y="169.0" text-anchor="middle" fill="#20282d" font-size="25" font-weight="normal" data-tex="9">9</text><text x="93.0" y="245" text-anchor="middle" fill="#20282d" font-size="24" font-weight="normal" data-tex="3">3</text><rect x="220" y="94.62235918515235" width="115.37764081484765" height="115.37764081484765" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></rect><text x="277.6888204074238" y="159.31117959257617" text-anchor="middle" fill="#20282d" font-size="25" font-weight="normal" data-tex="13">13</text><text x="277.6888204074238" y="245" text-anchor="middle" fill="#20282d" font-size="24" font-weight="normal" data-tex="\sqrt{13}">√13</text><rect x="415" y="82" width="128" height="128" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><text x="479.0" y="153.0" text-anchor="middle" fill="#20282d" font-size="25" font-weight="normal" data-tex="16">16</text><text x="479.0" y="245" text-anchor="middle" fill="#20282d" font-size="24" font-weight="normal" data-tex="4">4</text><text x="300" y="300" text-anchor="middle" fill="#20282d" font-size="24" font-weight="normal" data-tex="3^2 &lt; 13 &lt; 4^2   \Longrightarrow    3 &lt; \sqrt{13} &lt; 4">3² &lt; 13 &lt; 4²   ⇒   3 &lt; √13 &lt; 4</text></g></svg><figcaption>Hvers vegna er √13 milli 3 og 4?</figcaption></figure></section>
+<section class="example ex-cyan" id="lota27-daemi11" data-source-title="Sama námundunarregla, ólík stærð talna">
+<h4><span class="example-tag">DÆMI</span> Sama námundunarregla,
+ólík stærð talna</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\begin{array}{c|c|c}
+\text{Tala}&amp;\text{3 markverðir tölustafir}&amp;\text{4 aukastafir}\\\hline
+\sqrt{300}&amp;17{,}3&amp;17{,}3205\\
+\sqrt{0{,}3}&amp;0{,}548&amp;0{,}5477\\
+\sqrt{0{,}03}&amp;0{,}173&amp;0{,}1732
+\end{array}\]</span></span> Núll fremst í
+<span class="latex-math">\(0{,}00320\)</span>
+teljast ekki markverð. Talan er skrifuð með þremur markverðum
+tölustöfum: 3, 2 og síðasta 0.</p>
+</section>
+<h3 id="lengd-úr-flatarmáli-og-innsetning-í-formúlu">Lengd úr flatarmáli
+og innsetning í formúlu</h3>
+<section class="example ex-magenta" id="lota27-daemi12" data-source-title="Ferningslaga gólf og mynd frá skjávarpa">
+<h4><span class="example-tag">DÆMI</span> Ferningslaga gólf og mynd frá skjávarpa</h4>
+<p>Ferningslaga gólf er
+<span class="latex-math">\(180\text{ m}^2\)</span>.
+Hliðin er
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[h=\sqrt{180}\text{ m}\approx13{,}42\text{ m}.\]</span></span>
+Hliðarlengdin er jákvæð. Flatarmálseiningin
+m<span class="latex-math">\(^2\)</span>
+verður lengdareiningin m.</p>
+<p>Í gefnu líkani fyrir skjávarpa er
+<span class="latex-math">\(F=3d^2\)</span>,
+þar sem
+<span class="latex-math">\(d\)</span>
+er fjarlægð frá vegg í metrum og
+<span class="latex-math">\(F\)</span>
+flatarmál myndarinnar í
+m<span class="latex-math">\(^2\)</span>.
+Fyrir
+<span class="latex-math">\(d=1{,}8\)</span>
+er
+<span class="latex-math">\(F=3\cdot1{,}8^2=3\cdot3{,}24=9{,}72\text{ m}^2\)</span>.</p>
+</section>
+<aside class="note">
+<p><strong>ATH.:</strong> Ef formúlan er
+<span class="latex-math">\(F=kt^2\)</span>,
+reiknarðu fyrst
+<span class="latex-math">\(t^2\)</span>
+og margfaldar svo með
+<span class="latex-math">\(k\)</span>.
+Ekki hefja
+<span class="latex-math">\(k\)</span>
+í annað veldi nema svigar segi það. Rót af broti og stæður með
+<span class="latex-math">\(\pi\)</span>
+koma í næsta tíma.</p>
+</aside>
+<nav class="lesson-nav" aria-label="Flakk eftir 2. tíma"><a href="#lota27-timi01">← 1. tími</a><a href="#lota27-yfirlit">Yfirlit</a><a href="#lota27-hugtok">Hugtök</a><a href="#lota27-timi03">3. tími →</a></nav><p class="owner">GGJ Hlíðaskóli gnajonsdottir@gmail.com</p></section><section class="lesson" id="lota27-timi03"><p class="lesson-kicker">Lota 27 · 3. tími</p><h2>RÆTUR Í STÆÐUM OG FORMÚLUM</h2>
+<p class="learning-goals"><strong>Þetta lærir þú:</strong> Að lesa rótartákn og brot rétt,
+sameina rótarliði og reikna með formúlum án ótímabærrar námundunar.</p>
+<h3 id="hvað-er-undir-rótinni">Hvað er undir rótinni?</h3>
+<p>Rótarstrikið gegnir svipuðu hlutverki og svigar: allt undir því
+tilheyrir rótinni. Skoðaðu lengd striksins áður en þú slærð inn á
+vasareikni.</p>
+<section class="example ex-green" id="lota27-daemi13" data-source-title="Þrjár stæður sem líta svipað út">
+<h4><span class="example-tag">DÆMI</span> Þrjár stæður sem líta svipað
+út</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[4\sqrt7\approx10{,}583,\qquad
+\frac{\sqrt7}{4}\approx0{,}661,\qquad
+\sqrt{\frac74}\approx1{,}323.\]</span></span> Stæðurnar eru reiknaðar á ólíkan hátt:</p>
+<ol>
+<li>Finndu ferningsrótina af 7 og margfaldaðu niðurstöðuna með 4.</li>
+<li>Finndu ferningsrótina af 7 og deildu niðurstöðunni með 4.</li>
+<li>Deildu 7 með 4 og finndu síðan ferningsrótina af niðurstöðunni.</li>
+</ol>
+<p>Í annarri stæðunni er deilingin með 4 utan rótarinnar. Í þeirri þriðju er allt brotið undir rótinni. Notaðu rótaraðgerð vasareiknisins og geymdu alla aukastafi í milliskrefum. Hér er lokasvarið námundað að þremur aukastöfum.</p>
+</section>
+<section class="example ex-cyan" id="lota27-daemi14" data-source-title="Brot, rætur og talan \(\pi\)">
+<h4><span class="example-tag">DÆMI</span> Brot, rætur og talan
+<span class="latex-math">\(\pi\)</span></h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\begin{aligned}
+\frac{\sqrt8}{\sqrt3}&amp;\approx1{,}633
+&amp;&amp;\text{(4 markverðir tölustafir)},\\
+\frac{3}{\sqrt7}&amp;\approx1{,}13
+&amp;&amp;\text{(2 aukastafir)},\\
+\sqrt{3\pi}&amp;\approx3{,}07,
+&amp;\qquad\sqrt{\frac{45}{\pi}}&amp;\approx3{,}78.
+\end{aligned}\]</span></span> Notaðu
+<span class="latex-math">\(\pi\)</span>-hnappinn.
+Ef þú setur
+<span class="latex-math">\(3{,}14\)</span>
+inn strax taparðu nákvæmni. Nefnari má aldrei vera núll.</p>
+</section>
+<h3 id="samlagning-rótarliða">Samlagning rótarliða</h3>
+<p><a href="#lota27-hugtak-studull" class="term-link" data-term="lota27-hugtak-studull" id="lota27-termref011">Stuðullinn</a> fyrir framan rót segir með hvaða tölu rótin er margfölduð. Liði með sömu rót má sameina með því að leggja saman stuðlana.</p>
+<section class="example ex-magenta" id="lota27-daemi15" data-source-title="Sama rót í öllum liðum">
+<h4><span class="example-tag">DÆMI</span> Sama rót í öllum liðum</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\begin{aligned}
+3\sqrt7+5\sqrt7&amp;=(3+5)\sqrt7=8\sqrt7\approx21{,}17,\\
+8\sqrt3-2\sqrt3&amp;=6\sqrt3\approx10{,}39,\\
+\sqrt{13}+4\sqrt{13}&amp;=5\sqrt{13}\approx18{,}03.
+\end{aligned}\]</span></span> Óskrifaði stuðullinn í
+<span class="latex-math">\(\sqrt{13}\)</span>
+er 1. Rótin sjálf breytist ekki við sameininguna.</p>
+<figure class="math-figure" id="fig-rotarlidir"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 265" role="img" aria-labelledby="ft-rotarlidir fd-rotarlidir"><title id="ft-rotarlidir">Leggðu saman liði með sömu rót</title><desc id="fd-rotarlidir">Þrír liðir √7 og fimm liðir √7 eru saman átta slíkir liðir.</desc><defs><marker id="arr-rotarlidir" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><rect x="43" y="70" width="57" height="60" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><text x="71.5" y="109" text-anchor="middle" fill="#20282d" font-size="23" font-weight="normal" data-tex="\sqrt{7}">√7</text><rect x="108" y="70" width="57" height="60" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><text x="136.5" y="109" text-anchor="middle" fill="#20282d" font-size="23" font-weight="normal" data-tex="\sqrt{7}">√7</text><rect x="173" y="70" width="57" height="60" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><text x="201.5" y="109" text-anchor="middle" fill="#20282d" font-size="23" font-weight="normal" data-tex="\sqrt{7}">√7</text><rect x="238" y="70" width="57" height="60" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></rect><text x="266.5" y="109" text-anchor="middle" fill="#20282d" font-size="23" font-weight="normal" data-tex="\sqrt{7}">√7</text><rect x="303" y="70" width="57" height="60" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></rect><text x="331.5" y="109" text-anchor="middle" fill="#20282d" font-size="23" font-weight="normal" data-tex="\sqrt{7}">√7</text><rect x="368" y="70" width="57" height="60" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></rect><text x="396.5" y="109" text-anchor="middle" fill="#20282d" font-size="23" font-weight="normal" data-tex="\sqrt{7}">√7</text><rect x="433" y="70" width="57" height="60" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></rect><text x="461.5" y="109" text-anchor="middle" fill="#20282d" font-size="23" font-weight="normal" data-tex="\sqrt{7}">√7</text><rect x="498" y="70" width="57" height="60" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></rect><text x="526.5" y="109" text-anchor="middle" fill="#20282d" font-size="23" font-weight="normal" data-tex="\sqrt{7}">√7</text><text x="137" y="49" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="3\sqrt{7}">3√7</text><text x="400" y="49" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="5\sqrt{7}">5√7</text><text x="300" y="192" text-anchor="middle" fill="#0877c9" font-size="27" font-weight="normal" data-tex="3\sqrt{7} + 5\sqrt{7} = 8\sqrt{7}">3√7 + 5√7 = 8√7</text></g></svg><figcaption>Litirnir aðgreina hópana. Hver reitur táknar √7.</figcaption></figure></section>
+<aside class="note">
+<p><strong>MUNDU:</strong>
+<span class="latex-math">\(\sqrt2+\sqrt3\)</span>
+er ekki
+<span class="latex-math">\(\sqrt5\)</span>.
+Almennt má ekki leggja tölurnar undir rótartáknunum saman og taka síðan eina rót af summunni. Í <a href="#lota27-timi07">7.
+tíma</a> lærirðu að einfalda rætur áður en þú sameinar liði.</p>
+</aside>
+<h3 id="settu-inn-reiknaðu-og-túlkaðu">Settu inn, reiknaðu og
+túlkaðu</h3>
+<section class="example ex-green" id="lota27-daemi16" data-source-title="Lengd girðingar úr flatarmáli">
+<h4><span class="example-tag">DÆMI</span> Lengd girðingar úr
+flatarmáli</h4>
+<p>Ferningslaga reitur hefur flatarmál
+<span class="latex-math">\(F\)</span>
+í
+m<span class="latex-math">\(^2\)</span>.
+Ummálið í metrum er
+<span class="latex-math">\(U=4\sqrt F\)</span>,
+því hver hlið er
+<span class="latex-math">\(\sqrt F\)</span>.
+Ef
+<span class="latex-math">\(F=6\text{ m}^2\)</span>:
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[U=4\sqrt6\approx9{,}80\text{ m}.\]</span></span>
+Hér er aðeins 6 undir rót. Margfaldað er með 4 vegna þess að ferningurinn hefur fjórar jafnlangar hliðar.</p>
+</section>
+<section class="example ex-cyan" id="lota27-daemi17" data-source-title="Flatarmál: öll stæðan undir rót">
+<h4><span class="example-tag">DÆMI</span> Flatarmál: öll stæðan undir
+rót</h4>
+<p>Þrjú eins ferningslaga skilti hafa samanlagt flatarmálið
+<span class="latex-math">\(F=96\text{ dm}^2\)</span>.
+Hlið hvers skiltis er
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[h=\sqrt{\frac{F}{3}}=\sqrt{\frac{96}{3}}=\sqrt{32}\approx5{,}66\text{ dm}.\]</span></span>
+Rétthyrningur hefur lengd
+<span class="latex-math">\(\ell\)</span>
+sem er
+<span class="latex-math">\(1{,}5\)</span>
+sinnum breiddin. Þá er
+<span class="latex-math">\(\ell^2=1{,}5F\)</span>.
+Fyrir
+<span class="latex-math">\(F=26\text{ cm}^2\)</span>
+fæst
+<span class="latex-math">\(\ell=\sqrt{1{,}5F}=\sqrt{39}\approx6{,}24\text{ cm}\)</span>.
+Öll margfeldisstæðan
+<span class="latex-math">\(1{,}5F\)</span>
+er undir rótinni.</p>
+</section>
+<section class="example ex-magenta" id="lota27-daemi18" data-source-title="Radíus út frá flatarmáli">
+<h4><span class="example-tag">DÆMI</span> Radíus út frá flatarmáli</h4>
+<p>Úr
+<span class="latex-math">\(F=\pi r^2\)</span>
+fæst
+<span class="latex-math">\(r=\sqrt{F/\pi}\)</span>
+fyrir
+<span class="latex-math">\(r\geq0\)</span>.
+Ef
+<span class="latex-math">\(F=60\text{ cm}^2\)</span>:
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[r=\sqrt{\frac{60}{\pi}}\text{ cm}\approx4{,}4\text{ cm}
+\quad\text{(2 markverðir tölustafir).}\]</span></span></p>
+</section>
+<h3 id="breyting-er-nýtt-gildi-mínus-eldra-gildi">Finndu breytingu með frádrætti</h3>
+<section class="example ex-green" id="lota27-daemi19" data-source-title="Kostnaðarbreyting við stærra skilti">
+<h4><span class="example-tag">DÆMI</span> Kostnaðarbreyting við
+stærra skilti</h4>
+<p>Kantur utan um ferningslaga skilti kostar 750 kr. fyrir hvern metra
+af ummáli. Ef flatarmál skiltisins er
+<span class="latex-math">\(F\)</span>
+í
+m<span class="latex-math">\(^2\)</span>,
+er kostnaðurinn
+<span class="latex-math">\(K=3000\sqrt F\)</span>
+kr. Flatarmálið fer úr
+<span class="latex-math">\(2{,}25\text{ m}^2\)</span>
+í
+<span class="latex-math">\(4\text{ m}^2\)</span>.
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[K_{\text{fyrir}}=3000\sqrt{2{,}25}=4500,\qquad
+K_{\text{eftir}}=3000\sqrt4=6000.\]</span></span>
+Kostnaðurinn eykst um
+<span class="latex-math">\(6000-4500=1500\)</span>
+kr. Við drögum fyrra gildið frá því nýja:
+<span class="latex-math">\(\Delta K=3000\sqrt{F_{\text{eftir}}}-3000\sqrt{F_{\text{fyrir}}}\)</span>.
+Við tökum ekki rót af flatarmálsmuninum einum saman.</p>
+</section>
+<aside class="rule">
+<p><strong>FLÝTILEIÐ:</strong> Varðveittu nákvæmar stæður eða fulla
+nákvæmni vasareiknis í milliskrefum. Námundaðu lokasvarið samkvæmt
+fyrirmælum.</p>
+</aside>
+<nav class="lesson-nav" aria-label="Flakk eftir 3. tíma"><a href="#lota27-timi02">← 2. tími</a><a href="#lota27-yfirlit">Yfirlit</a><a href="#lota27-hugtok">Hugtök</a><a href="#lota27-timi04">4. tími →</a></nav><p class="owner">GGJ Hlíðaskóli gnajonsdottir@gmail.com</p></section><section class="lesson" id="lota27-timi04"><p class="lesson-kicker">Lota 27 · 4. tími</p><h2>EINFALDAR ANNARS STIGS JÖFNUR</h2>
+<p class="learning-goals"><strong>Þetta lærir þú:</strong> Að einangra ferningslið, finna báðar
+lausnir og velja leyfilega lausn í orðadæmi.</p>
+<h3 id="tvær-tölur-geta-haft-sama-ferning">Tvær tölur geta haft sama
+ferning</h3>
+<p><a href="#lota27-hugtak-annarsstigs" class="term-link" data-term="lota27-hugtak-annarsstigs" id="lota27-termref012">Annars stigs jafna</a> má umrita þannig að allir liðir standi öðrum megin við jafnaðarmerkið og núll hinum megin. Eftir einföldun er hæsta veldi óþekktunnar 2 og stuðull þess liðar er ekki núll. Í þessum tíma leysum við
+jöfnur sem má færa á formið
+<span class="latex-math">\(x^2=k\)</span>.</p>
+<figure class="math-figure" id="fig-tvaer-lausnir"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 180" role="img" aria-labelledby="ft-tvaer-lausnir fd-tvaer-lausnir"><title id="ft-tvaer-lausnir">Sami ferningur beggja vegna núlls</title><desc id="fd-tvaer-lausnir">Tölurnar mínus sjö og sjö eru jafn langt frá núlli og báðar hafa ferninginn 49.</desc><defs><marker id="arr-tvaer-lausnir" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><line x1="65" y1="90" x2="540" y2="90" stroke="#20282d" stroke-width="2"></line><line x1="540" y1="90" x2="531.8959760788259" y2="93.91468980700107" stroke="#20282d" stroke-width="2"></line><line x1="540" y1="90" x2="531.8959760788259" y2="86.08531019299893" stroke="#20282d" stroke-width="2"></line><line x1="100" y1="84" x2="100" y2="96" stroke="#20282d" stroke-width="2"></line><line x1="125" y1="84" x2="125" y2="96" stroke="#20282d" stroke-width="2"></line><line x1="150" y1="84" x2="150" y2="96" stroke="#20282d" stroke-width="2"></line><line x1="175" y1="84" x2="175" y2="96" stroke="#20282d" stroke-width="2"></line><line x1="200" y1="84" x2="200" y2="96" stroke="#20282d" stroke-width="2"></line><line x1="225" y1="84" x2="225" y2="96" stroke="#20282d" stroke-width="2"></line><line x1="250" y1="84" x2="250" y2="96" stroke="#20282d" stroke-width="2"></line><line x1="275" y1="84" x2="275" y2="96" stroke="#20282d" stroke-width="2"></line><line x1="300" y1="84" x2="300" y2="96" stroke="#20282d" stroke-width="2"></line><line x1="325" y1="84" x2="325" y2="96" stroke="#20282d" stroke-width="2"></line><line x1="350" y1="84" x2="350" y2="96" stroke="#20282d" stroke-width="2"></line><line x1="375" y1="84" x2="375" y2="96" stroke="#20282d" stroke-width="2"></line><line x1="400" y1="84" x2="400" y2="96" stroke="#20282d" stroke-width="2"></line><line x1="425" y1="84" x2="425" y2="96" stroke="#20282d" stroke-width="2"></line><line x1="450" y1="84" x2="450" y2="96" stroke="#20282d" stroke-width="2"></line><line x1="475" y1="84" x2="475" y2="96" stroke="#20282d" stroke-width="2"></line><line x1="500" y1="84" x2="500" y2="96" stroke="#20282d" stroke-width="2"></line><text x="125" y="130" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="-7">−7</text><text x="300" y="130" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="0">0</text><text x="475" y="130" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="7">7</text><circle cx="125" cy="90" r="5" fill="#0877c9" stroke="#0877c9" stroke-width="2"></circle><circle cx="475" cy="90" r="5" fill="#0877c9" stroke="#0877c9" stroke-width="2"></circle><text x="125" y="53" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="(-7)^2 = 49">(−7)² = 49</text><text x="475" y="53" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="7^2 = 49">7² = 49</text></g></svg><figcaption>Sami ferningur beggja vegna núlls</figcaption></figure><aside class="rule">
+<p><strong>FLÝTILEIÐ:</strong></p>
+<ul>
+<li><p>Ef
+<span class="latex-math">\(k&gt;0\)</span>:
+<span class="latex-math">\(x^2=k\)</span>
+gefur
+<span class="latex-math">\(x=\pm\sqrt k\)</span>,
+tvær lausnir.</p></li>
+<li><p>Ef
+<span class="latex-math">\(k=0\)</span>:
+eina lausnin er
+<span class="latex-math">\(x=0\)</span>.</p></li>
+<li><p>Ef
+<span class="latex-math">\(k&lt;0\)</span>:
+engin rauntölulausn, því ferningur er aldrei neikvæður.</p></li>
+</ul>
+</aside>
+<section class="example ex-green" id="lota27-daemi20" data-source-title="Einangraðu ferningsliðinn">
+<h4><span class="example-tag">DÆMI</span> Einangraðu ferningsliðinn</h4>
+<p>Leystu
+<span class="latex-math">\(3x^2-7=41\)</span>.</p>
+<p><strong class="step">SKREF 1</strong> Leggðu 7 við báðar hliðar:
+<span class="latex-math">\(3x^2=48\)</span>.</p>
+<p><strong class="step">SKREF 2</strong> Deildu báðum hliðum með 3:
+<span class="latex-math">\(x^2=16\)</span>.</p>
+<p><strong class="step">SKREF 3</strong> Finndu báðar lausnir:
+<span class="latex-math">\(x=\pm4\)</span>.</p>
+<p>Prófun:
+<span class="latex-math">\(3\cdot4^2-7=41\)</span>
+og
+<span class="latex-math">\(3\cdot(-4)^2-7=41\)</span>.</p>
+<figure class="math-figure" id="fig-einangrun"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 390" role="img" aria-labelledby="ft-einangrun fd-einangrun"><title id="ft-einangrun">Sama aðgerð báðum megin jöfnunnar</title><desc id="fd-einangrun">Jafnan 3x²−7=41 verður 3x²=48, síðan x²=16 og að lokum x=±4.</desc><defs><marker id="arr-einangrun" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><rect x="70" y="10" width="265" height="57" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><text x="202" y="47" text-anchor="middle" fill="#20282d" font-size="25" font-weight="normal" data-tex="3x^2 - 7 = 41">3x² − 7 = 41</text><line x1="201" y1="68" x2="201" y2="99" stroke="#20282d" stroke-width="2"></line><line x1="201" y1="99" x2="197.08531019299892" y2="90.89597607882591" stroke="#20282d" stroke-width="2"></line><line x1="201" y1="99" x2="204.91468980700108" y2="90.89597607882591" stroke="#20282d" stroke-width="2"></line><text x="354" y="60" text-anchor="start" fill="#20282d" font-size="19" font-weight="normal">+7 báðum megin</text><rect x="70" y="102" width="265" height="57" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><text x="202" y="139" text-anchor="middle" fill="#20282d" font-size="25" font-weight="normal" data-tex="3x^2 = 48">3x² = 48</text><line x1="201" y1="160" x2="201" y2="191" stroke="#20282d" stroke-width="2"></line><line x1="201" y1="191" x2="197.08531019299892" y2="182.8959760788259" stroke="#20282d" stroke-width="2"></line><line x1="201" y1="191" x2="204.91468980700108" y2="182.8959760788259" stroke="#20282d" stroke-width="2"></line><text x="354" y="152" text-anchor="start" fill="#20282d" font-size="19" font-weight="normal">÷3 báðum megin</text><rect x="70" y="194" width="265" height="57" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><text x="202" y="231" text-anchor="middle" fill="#20282d" font-size="25" font-weight="normal" data-tex="x^2 = 16">x² = 16</text><line x1="201" y1="252" x2="201" y2="283" stroke="#20282d" stroke-width="2"></line><line x1="201" y1="283" x2="197.08531019299892" y2="274.8959760788259" stroke="#20282d" stroke-width="2"></line><line x1="201" y1="283" x2="204.91468980700108" y2="274.8959760788259" stroke="#20282d" stroke-width="2"></line><text x="354" y="244" text-anchor="start" fill="#20282d" font-size="19" font-weight="normal">báðar lausnir</text><rect x="70" y="286" width="265" height="57" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></rect><text x="202" y="323" text-anchor="middle" fill="#20282d" font-size="25" font-weight="normal" data-tex="x = -4\text{ eða }x = 4">x = −4 eða x = 4</text></g></svg><figcaption>Sama aðgerð báðum megin jöfnunnar</figcaption></figure></section>
+<section class="example ex-cyan" id="lota27-daemi21" data-source-title="Óræð lausn er líka nákvæm lausn">
+<h4><span class="example-tag">DÆMI</span> Óræð lausn er líka nákvæm
+lausn</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[2y^2+5=19\quad\Longrightarrow\quad y^2=7
+\quad\Longrightarrow\quad y=\pm\sqrt7\approx\pm2{,}646.\]</span></span>
+Skrifaðu báðar lausnir:
+<span class="latex-math">\(y\approx2{,}646\)</span>
+eða
+<span class="latex-math">\(y\approx-2{,}646\)</span>.
+Táknið
+<span class="latex-math">\(\pm\)</span>
+er stytting fyrir þessa tvo möguleika.</p>
+</section>
+<aside class="note">
+<p><strong>MUNDU:</strong> Taktu ekki rót áður en þú hefur einangrað
+<span class="latex-math">\(x^2\)</span>.
+Til dæmis má ekki breyta
+<span class="latex-math">\(x^2+16=121\)</span>
+í
+<span class="latex-math">\(x+4=11\)</span>.</p>
+</aside>
+<h3 id="brot-tugabrot-og-svigar">Brot, tugabrot og svigar</h3>
+<section class="example ex-green" id="lota27-daemi22" data-source-title="Þegar deilt er með tölu">
+<h4><span class="example-tag">DÆMI</span> Þegar deilt er með tölu</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\frac{x^2}{6}=8\quad\Longrightarrow\quad x^2=48
+\quad\Longrightarrow\quad x=\pm\sqrt{48}.\]</span></span>
+Margfaldað er með 6 á báðum hliðum. Að deila með 6 aftur myndi ekki
+einangra
+<span class="latex-math">\(x^2\)</span>.</p>
+</section>
+<section class="example ex-cyan" id="lota27-daemi23" data-source-title="Tugabrotsstuðull">
+<h4><span class="example-tag">DÆMI</span> Tugabrotsstuðull</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\begin{aligned}
+0{,}08z^2+0{,}4&amp;=2{,}4,\\
+0{,}08z^2&amp;=2,\\
+z^2&amp;=25,\\
+z&amp;=\pm5.
+\end{aligned}\]</span></span> Prófun með
+<span class="latex-math">\(-5\)</span>:
+<span class="latex-math">\(0{,}08\cdot25+0{,}4=2{,}4\)</span>.</p>
+</section>
+<section class="example ex-magenta" id="lota27-daemi24" data-source-title="Allt margfeldið í öðru veldi">
+<h4><span class="example-tag">DÆMI</span> Allt margfeldið í öðru veldi</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[(0{,}4u)^2=9{,}6\quad\Longrightarrow\quad0{,}16u^2=9{,}6
+\quad\Longrightarrow\quad u^2=60.\]</span></span> Því er
+<span class="latex-math">\(u=\pm\sqrt{60}\approx\pm7{,}746\)</span>.
+Stuðullinn
+<span class="latex-math">\(0{,}4\)</span>
+er líka hafinn í annað veldi.</p>
+</section>
+<h3 id="leyfilegt-gildi-í-rúmfræði">Lausn sem samræmist aðstæðum</h3>
+<section class="example ex-green" id="lota27-daemi25" data-source-title="Umbúðir utan um hringlaga plötu">
+<h4><span class="example-tag">DÆMI</span> Umbúðir utan um hringlaga
+plötu</h4>
+<p>Hringlaga plata hefur flatarmál
+<span class="latex-math">\(90\text{ cm}^2\)</span>.
+Platan liggur á ferningslaga botni umbúða og snertir allar fjórar hliðar botnsins. Hlið
+botnsins er því þvermál plötunnar:
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[r=\sqrt{\frac{90}{\pi}},\qquad
+h=2r=2\sqrt{\frac{90}{\pi}}\approx10{,}70\text{ cm}.\]</span></span>
+Hér veljum við jákvæða rót vegna þess að
+<span class="latex-math">\(r\)</span>
+og
+<span class="latex-math">\(h\)</span>
+eru lengdir. Ef aðeins væri sagt að platan rúmaðist í umbúðunum, án
+snertingar, væri stærð botnsins ekki ákvörðuð.</p>
+</section>
+<aside class="note">
+<p><strong>ATH.:</strong> Jafnan
+<span class="latex-math">\(h^2=F\)</span>
+hefur tvær lausnir þegar <span class="latex-math">\(F>0\)</span>. Þegar
+<span class="latex-math">\(h\)</span>
+táknar hliðarlengd og
+<span class="latex-math">\(F&gt;0\)</span>
+er aðeins
+<span class="latex-math">\(h=\sqrt F\)</span>
+leyfilegt.</p>
+</aside>
+<nav class="lesson-nav" aria-label="Flakk eftir 4. tíma"><a href="#lota27-timi03">← 3. tími</a><a href="#lota27-yfirlit">Yfirlit</a><a href="#lota27-hugtok">Hugtök</a><a href="#lota27-timi05">5. tími →</a></nav><p class="owner">GGJ Hlíðaskóli gnajonsdottir@gmail.com</p></section><section class="lesson" id="lota27-timi05"><p class="lesson-kicker">Lota 27 · 5. tími</p><h2>ANNARS STIGS JÖFNUR ÁFRAM</h2>
+<p class="learning-goals"><strong>Þetta lærir þú:</strong> Að sameina ferningsliði, reikna
+veldi margfeldis og setja upp jöfnur úr flatarmáli.</p>
+<h3 id="einfaldaðu-áður-en-þú-leysir">Einfaldaðu áður en þú leysir</h3>
+<p>Eftir einföldun notum við sömu aðferð og í <a href="#lota27-timi04">4. tíma</a>: einangrum
+<span class="latex-math">\(x^2\)</span>
+og finnum síðan
+<span class="latex-math">\(x\)</span>.</p>
+<aside class="rule">
+<p><strong>FLÝTILEIÐ:</strong>
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[ax^2+bx^2=(a+b)x^2,\qquad(kx)^2=k^2x^2,\qquad
+(ax)(bx)=abx^2.\]</span></span> Því er
+<span class="latex-math">\((4x)^2=16x^2\)</span>,
+en
+<span class="latex-math">\(4x^2\)</span>
+merkir
+<span class="latex-math">\(4\cdot x^2\)</span>.</p>
+</aside>
+<section class="example ex-green" id="lota27-daemi26" data-source-title="Þrjár leiðir að sömu gerð jöfnu">
+<h4><span class="example-tag">DÆMI</span> Þrjár leiðir að sömu gerð
+jöfnu</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\begin{aligned}
+7x^2-3x^2=100&amp;\ \Longrightarrow\ 4x^2=100
+\ \Longrightarrow\ x=\pm5,\\
+x^2+(2x)^2=80&amp;\ \Longrightarrow\ 5x^2=80
+\ \Longrightarrow\ x=\pm4,\\
+(4y)(6y)=216&amp;\ \Longrightarrow\ 24y^2=216
+\ \Longrightarrow\ y=\pm3.
+\end{aligned}\]</span></span> Í miðlínunni er
+<span class="latex-math">\((2x)^2=4x^2\)</span>;
+því verða liðirnir saman
+<span class="latex-math">\(5x^2\)</span>.</p>
+<figure class="math-figure" id="fig-veldi-margfeldis"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 320" role="img" aria-labelledby="ft-veldi-margfeldis fd-veldi-margfeldis"><title id="ft-veldi-margfeldis">Veldi margfeldis: (4x)² er 16x²</title><desc id="fd-veldi-margfeldis">Ferningur með hlið 4x er skipt í sextán ferninga með hlið x. Fjórir slíkir ferningar hafa aðeins fjórðung þess flatarmáls.</desc><defs><marker id="arr-veldi-margfeldis" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><rect x="60" y="30" width="47" height="47" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="60" y="77" width="47" height="47" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="60" y="124" width="47" height="47" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="60" y="171" width="47" height="47" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="107" y="30" width="47" height="47" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="107" y="77" width="47" height="47" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="107" y="124" width="47" height="47" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="107" y="171" width="47" height="47" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="154" y="30" width="47" height="47" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="154" y="77" width="47" height="47" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="154" y="124" width="47" height="47" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="154" y="171" width="47" height="47" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="201" y="30" width="47" height="47" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="201" y="77" width="47" height="47" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="201" y="124" width="47" height="47" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="201" y="171" width="47" height="47" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="365" y="100" width="47" height="47" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></rect><rect x="412" y="100" width="47" height="47" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></rect><rect x="365" y="147" width="47" height="47" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></rect><rect x="412" y="147" width="47" height="47" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></rect><text x="154" y="254" text-anchor="middle" fill="#20282d" font-size="24" font-weight="normal" data-tex="(4x)^2 = 16x^2">(4x)² = 16x²</text><text x="411" y="254" text-anchor="middle" fill="#20282d" font-size="24" font-weight="normal" data-tex="4x^2">4x²</text><text x="300" y="295" text-anchor="middle" fill="#20282d" font-size="20" font-weight="normal">Hver lítill ferningur hefur hlið x.</text></g></svg><figcaption>Veldi margfeldis: (4x)² er 16x²</figcaption></figure></section>
+<section class="example ex-cyan" id="lota27-daemi27" data-source-title="Ferningsliðir báðum megin">
+<h4><span class="example-tag">DÆMI</span> Ferningsliðir báðum megin</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\begin{aligned}
+(6x)^2&amp;=44+(4x)^2,\\
+36x^2&amp;=44+16x^2,\\
+20x^2&amp;=44,\\
+x^2&amp;=2{,}2,\\
+x&amp;=\pm\sqrt{2{,}2}\approx\pm1{,}48.
+\end{aligned}\]</span></span> Við drögum
+<span class="latex-math">\(16x^2\)</span>
+frá báðum hliðum. Hér er lokasvarið námundað að tveimur aukastöfum.</p>
+</section>
+<section class="example ex-magenta" id="lota27-daemi28" data-source-title="Brotastuðull og tveir ferningsliðir">
+<h4><span class="example-tag">DÆMI</span> Brotastuðull og tveir
+ferningsliðir</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\frac{5z^2}{4}=20\ \Longrightarrow\ 5z^2=80
+\ \Longrightarrow\ z=\pm4.\]</span></span>
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[(0{,}6t)^2+(0{,}8t)^2=9
+\ \Longrightarrow\ (0{,}36+0{,}64)t^2=9
+\ \Longrightarrow\ t=\pm3.\]</span></span></p>
+</section>
+<h3 id="flatarmál-verður-jafna">Settu upp jöfnu út frá flatarmáli</h3>
+<section class="example ex-green" id="lota27-daemi29" data-source-title="Op skorið úr pappaspjaldi">
+<h4><span class="example-tag">DÆMI</span> Op skorið úr pappaspjaldi</h4>
+<p>Ferningslaga pappaspjald hefur hlið
+<span class="latex-math">\(4x\)</span>
+cm. Úr miðjunni er skorið ferningslaga op með hlið
+<span class="latex-math">\(3x\)</span>
+cm. Flatarmál pappans sem eftir stendur er
+<span class="latex-math">\(175\text{ cm}^2\)</span>.</p>
+<figure class="math-figure" id="fig-pappaspjald"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 340" role="img" aria-labelledby="ft-pappaspjald fd-pappaspjald"><title id="ft-pappaspjald">Flatarmál pappans sem stendur eftir</title><desc id="fd-pappaspjald">Ytri ferningur með hlið 4x og innra op með hlið 3x, í réttum hlutföllum.</desc><defs><marker id="arr-pappaspjald" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><rect x="180" y="35" width="240" height="240" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="210" y="65" width="180" height="180" fill="white" stroke="#20282d" stroke-width="2"></rect><line x1="180" y1="300" x2="420" y2="300" stroke="#20282d" stroke-width="2"></line><text x="300" y="329" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="4x">4x</text><line x1="210" y1="160" x2="390" y2="160" stroke="#20282d" stroke-width="2"></line><text x="300" y="148" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="3x">3x</text></g></svg><figcaption>Flatarmál pappans sem stendur eftir</figcaption></figure><p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[(4x)^2-(3x)^2=175
+\ \Longrightarrow\ 7x^2=175
+\ \Longrightarrow\ x^2=25.\]</span></span> Þar sem
+<span class="latex-math">\(x&gt;0\)</span>
+er
+<span class="latex-math">\(x=5\)</span>.
+Hliðarlengd opsins er 15 cm og hliðarlengd spjaldsins 20 cm. Prófun:
+<span class="latex-math">\(20^2-15^2=175\)</span>.</p>
+</section>
+<section class="example ex-cyan" id="lota27-daemi30" data-source-title="Tveir ferningslaga dúkar">
+<h4><span class="example-tag">DÆMI</span> Tveir ferningslaga dúkar</h4>
+<p>Tveir dúkar hafa hliðarnar
+<span class="latex-math">\(x\)</span>
+og
+<span class="latex-math">\(4x\)</span>
+cm. Samanlagt flatarmál er
+<span class="latex-math">\(833\text{ cm}^2\)</span>:
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[x^2+(4x)^2=833\ \Longrightarrow\ 17x^2=833
+\ \Longrightarrow\ x=7.\]</span></span> Hliðarlengdirnar
+eru 7 cm og 28 cm. Prófun:
+<span class="latex-math">\(7^2+28^2=49+784=833\)</span>.
+Við leggjum saman flatarmál, ekki hliðarlengdir áður en við hefjum í
+annað veldi.</p>
+</section>
+<section class="example ex-magenta" id="lota27-daemi31" data-source-title="Fleiri liðir og fasti">
+<h4><span class="example-tag">DÆMI</span> Fleiri liðir og fasti</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\begin{aligned}
+(3x)^2+(4x)^2+44&amp;=(6x)^2,\\
+25x^2+44&amp;=36x^2,\\
+44&amp;=11x^2,\\
+x&amp;=\pm2.
+\end{aligned}\]</span></span> Prófun fyrir
+<span class="latex-math">\(x=2\)</span>:
+<span class="latex-math">\(6^2+8^2+44=144=12^2\)</span>.</p>
+</section>
+<nav class="lesson-nav" aria-label="Flakk eftir 5. tíma"><a href="#lota27-timi04">← 4. tími</a><a href="#lota27-yfirlit">Yfirlit</a><a href="#lota27-hugtok">Hugtök</a><a href="#lota27-timi06">6. tími →</a></nav><p class="owner">GGJ Hlíðaskóli gnajonsdottir@gmail.com</p></section><section class="lesson" id="lota27-timi06"><p class="lesson-kicker">Lota 27 · 6. tími</p><h2>BLÖNDUÐ ORÐADÆMI</h2>
+<p class="learning-goals"><strong>Þetta lærir þú:</strong> Að velja formúlu, setja upp jöfnu og
+túlka niðurstöður um lengd, flatarmál, ummál og afl.</p>
+<h3 id="frá-orðum-að-stærðfræði">Frá orðum að stærðfræði</h3>
+<ol>
+<li><p>Skrifaðu hvað er þekkt og hvað á að finna. Skilgreindu breytuna
+með einingu.</p></li>
+<li><p>Teiknaðu mynd og merktu stærðirnar.</p></li>
+<li><p>Veldu tengsl: flatarmál, ummál eða gefið líkan.</p></li>
+<li><p>Leystu jöfnuna og athugaðu hvort svarið sé leyfilegt og
+trúlegt.</p></li>
+</ol>
+<section class="example ex-green" id="lota27-daemi32" data-source-title="Flatarmálið tvöfaldast">
+<h4><span class="example-tag">DÆMI</span> Flatarmálið tvöfaldast</h4>
+<p>Ferningslaga mynd á vegg hefur hlið
+<span class="latex-math">\(2{,}4\)</span>
+m. Flatarmálið á að tvöfaldast og myndin vera áfram ferningur. Nýja
+hliðin
+<span class="latex-math">\(h\)</span>
+uppfyllir
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[h^2=2\cdot2{,}4^2,\qquad h=2{,}4\sqrt2\approx3{,}39\text{ m}.\]</span></span></p>
+<figure class="math-figure" id="fig-staekkun"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 315" role="img" aria-labelledby="ft-staekkun fd-staekkun"><title id="ft-staekkun">Við tvöföldun flatarmáls margfaldast hliðarlengdin með √2</title><desc id="fd-staekkun">Fyrri hlið 2,4 m og ný hlið 2,4√2 m. Ferningarnir eru teiknaðir í sama kvarða.</desc><defs><marker id="arr-staekkun" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><rect x="35" y="102" width="144" height="144" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="340" y="42.35324701827429" width="203.6467529817257" height="203.6467529817257" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></rect><text x="107" y="174.0" text-anchor="middle" fill="#20282d" font-size="28" font-weight="normal" data-tex="F">F</text><text x="441.82337649086287" y="144.17662350913713" text-anchor="middle" fill="#20282d" font-size="28" font-weight="normal" data-tex="2F">2F</text><line x1="218" y1="170" x2="303" y2="170" stroke="#20282d" stroke-width="2"></line><line x1="303" y1="170" x2="294.8959760788259" y2="173.91468980700108" stroke="#20282d" stroke-width="2"></line><line x1="303" y1="170" x2="294.8959760788259" y2="166.08531019299892" stroke="#20282d" stroke-width="2"></line><text x="107" y="285" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="2{,}4\,\text{m}">2,4 m</text><text x="441.82337649086287" y="285" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="2{,}4\sqrt{2}\,\text{m}">2,4√2 m</text></g></svg><figcaption>Við tvöföldun flatarmáls margfaldast hliðarlengdin með √2</figcaption></figure><p>Almennt: ef flatarmál fernings margfaldast með
+<span class="latex-math">\(k&gt;0\)</span>,
+margfaldast hliðarlengdin með
+<span class="latex-math">\(\sqrt k\)</span>.
+Hún margfaldast ekki með
+<span class="latex-math">\(k\)</span>.</p>
+</section>
+<section class="example ex-cyan" id="lota27-daemi33" data-source-title="Grasfræ, plata og göngustígur">
+<h4><span class="example-tag">DÆMI</span> Grasfræ, plata og
+göngustígur</h4>
+<p>Þrír pokar af grasfræi duga hver á
+<span class="latex-math">\(12\text{ m}^2\)</span>.
+Alls má sá í
+<span class="latex-math">\(36\text{ m}^2\)</span>,
+svo stærsti ferningsreiturinn hefur hlið
+<span class="latex-math">\(\sqrt{36}=6\)</span>
+m.</p>
+<p>Ferningslaga plata er
+<span class="latex-math">\(6300\text{ cm}^2\)</span>.
+Hliðin er
+<span class="latex-math">\(\sqrt{6300}\approx79\)</span>
+cm með tveimur markverðum tölustöfum.</p>
+<p>Ferningslaga aldingarður er
+<span class="latex-math">\(8100\text{ m}^2\)</span>.
+Hliðin er
+<span class="latex-math">\(90\)</span>
+m og <a href="#lota27-hugtak-ummal" class="term-link" data-term="lota27-hugtak-ummal" id="lota27-termref013">ummálið</a>
+<span class="latex-math">\(U=4\cdot90=360\)</span>
+m. Göngustígur sem liggur nákvæmlega eftir jaðrinum er því 360 m
+langur.</p>
+</section>
+<aside class="note">
+<p><strong>MUNDU:</strong>
+<span class="latex-math">\(1\text{ m}=100\text{ cm}\)</span>,
+en
+<span class="latex-math">\(1\text{ m}^2=10000\text{ cm}^2\)</span>.
+Breyttu einingum áður en þú leggur stærðir saman.</p>
+</aside>
+<h3 id="hlutföll-hliða">Hlutföll hliða</h3>
+<section class="example ex-green" id="lota27-daemi34" data-source-title="Rétthyrningur með hliðar \(5x\) og \(2x\)">
+<h4><span class="example-tag">DÆMI</span> Rétthyrningur með hliðar
+<span class="latex-math">\(5x\)</span>
+og
+<span class="latex-math">\(2x\)</span></h4>
+<p>Flatarmál rétthyrnings er
+<span class="latex-math">\(360\text{ cm}^2\)</span>.
+Þá er
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[(5x)(2x)=360\ \Longrightarrow\ 10x^2=360
+\ \Longrightarrow\ x=6.\]</span></span> Lengdin er
+<span class="latex-math">\(5\cdot6=30\)</span>
+cm og breiddin
+<span class="latex-math">\(2\cdot6=12\)</span>
+cm. Ekki hætta við
+<span class="latex-math">\(x=6\)</span>
+þegar spurt er um hliðarlengdirnar.</p>
+<figure class="math-figure" id="fig-hlutfoll-hlida"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 260" role="img" aria-labelledby="ft-hlutfoll-hlida fd-hlutfoll-hlida"><title id="ft-hlutfoll-hlida">Flatarmál hjálpar að finna hliðarnar</title><desc id="fd-hlutfoll-hlida">Rétthyrningur með hliðar 5x og 2x og flatarmál 360 cm² hefur x=6, lengd 30 cm og breidd 12 cm.</desc><defs><marker id="arr-hlutfoll-hlida" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><rect x="110" y="40" width="350" height="140" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><text x="285" y="123" text-anchor="middle" fill="#20282d" font-size="28" font-weight="normal" data-tex="F = 360\,\text{cm}^2">F = 360 cm²</text><text x="285" y="215" text-anchor="middle" fill="#20282d" font-size="23" font-weight="normal" data-tex="5x = 30\,\text{cm}">5x = 30 cm</text><text x="480" y="95" text-anchor="start" fill="#20282d" font-size="22" font-weight="normal" data-tex="2x">2x</text><text x="480" y="125" text-anchor="start" fill="#20282d" font-size="20" font-weight="normal" data-tex="= 12\,\text{cm}">= 12 cm</text></g></svg><figcaption>Flatarmál hjálpar að finna hliðarnar</figcaption></figure></section>
+<section class="example ex-cyan" id="lota27-daemi35" data-source-title="Rétthyrningur hefur meira flatarmál en ferningur">
+<h4><span class="example-tag">DÆMI</span> Rétthyrningur hefur meira flatarmál en ferningur</h4>
+<p>Ferningur hefur hlið
+<span class="latex-math">\(3x\)</span>
+cm. Rétthyrningur hefur hliðar
+<span class="latex-math">\(5x\)</span>
+og
+<span class="latex-math">\(2x\)</span>
+cm og flatarmálið er
+<span class="latex-math">\(16\text{ cm}^2\)</span>
+meira en flatarmál ferningsins.</p>
+<figure class="math-figure" id="fig-samanburdur-flata"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 265" role="img" aria-labelledby="ft-samanburdur-flata fd-samanburdur-flata"><title id="ft-samanburdur-flata">Berðu saman flatarmál</title><desc id="fd-samanburdur-flata">Ferningur með hlið 3x og rétthyrningur með hliðar 5x og 2x, í sama kvarða.</desc><defs><marker id="arr-samanburdur-flata" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><rect x="40" y="55" width="135" height="135" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><rect x="300" y="100" width="225" height="90" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></rect><text x="107" y="226" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="3x">3x</text><text x="412" y="226" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="5x">5x</text><text x="540" y="150" text-anchor="start" fill="#20282d" font-size="22" font-weight="normal" data-tex="2x">2x</text><text x="107" y="130" text-anchor="middle" fill="#20282d" font-size="26" font-weight="normal" data-tex="9x^2">9x²</text><text x="412" y="154" text-anchor="middle" fill="#20282d" font-size="26" font-weight="normal" data-tex="10x^2">10x²</text></g></svg><figcaption>Berðu saman flatarmál</figcaption></figure><p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[10x^2-9x^2=16\ \Longrightarrow\ x=4.\]</span></span>
+Ferningurinn hefur hlið 12 cm. Rétthyrningurinn er 20 cm á lengd og 8 cm
+á breidd. Prófun:
+<span class="latex-math">\(160-144=16\text{ cm}^2\)</span>.</p>
+</section>
+<h3 id="jafnstórir-fletir-geta-haft-ólíka-lögun">Jafnstórir fletir geta
+haft ólíka lögun</h3>
+<section class="example ex-magenta" id="lota27-daemi36" data-source-title="Leirflötur mótaður í ferning">
+<h4><span class="example-tag">DÆMI</span> Leirflötur mótaður í ferning</h4>
+<p>Hringlaga leirflötur hefur radíus
+<span class="latex-math">\(6{,}5\)</span>
+cm. Hann er endurmótaður í ferning með sama flatarmál og sömu þykkt.
+Hlið ferningsins er
+<span class="latex-math">\(h\)</span>:
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[h^2=\pi\cdot6{,}5^2,\qquad h=6{,}5\sqrt\pi\approx11{,}52\text{ cm}.\]</span></span>
+Þetta er annað verkefni en að finna ferning sem umlykur hring og snertir
+hann. Sá ferningur hefði hlið
+<span class="latex-math">\(13\)</span>
+cm.</p>
+</section>
+<aside class="rule">
+<p><strong>FLÝTILEIÐ:</strong> Fyrir jákvæð flatarmál gildir
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\text{Ferningur: }h=\sqrt F,\qquad
+\text{hringur: }r=\sqrt{\frac F\pi},\qquad \text{þ}=2r.\]</span></span></p>
+</aside>
+<h3 id="einangraðu-stærð-í-gefnu-líkani">Einangraðu stærð í gefnu
+líkani</h3>
+<section class="example ex-green" id="lota27-daemi37" data-source-title="Fjarlægð skjávarpa úr flatarmáli myndar">
+<h4><span class="example-tag">DÆMI</span> Fjarlægð skjávarpa úr
+flatarmáli myndar</h4>
+<p>Í gefnu líkani er
+<span class="latex-math">\(F=2{,}5d^2\)</span>,
+þar sem
+<span class="latex-math">\(F\)</span>
+er flatarmál myndar í
+m<span class="latex-math">\(^2\)</span>
+og
+<span class="latex-math">\(d\)</span>
+fjarlægð skjávarpa frá vegg í metrum. Fyrir
+<span class="latex-math">\(F=160\text{ m}^2\)</span>
+fæst
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[160=2{,}5d^2\ \Longrightarrow\ d^2=64
+\ \Longrightarrow\ d=8\text{ m}.\]</span></span> Við
+veljum jákvæða fjarlægð. Prófun:
+<span class="latex-math">\(2{,}5\cdot8^2=160\)</span>.
+Líkanið gildir fyrir þær stillingar skjávarpans sem eru gefnar.</p>
+</section>
+<section class="example ex-cyan" id="lota27-daemi38" data-source-title="Þvermál sólarsellu úr afli">
+<h4><span class="example-tag">DÆMI</span> Þvermál sólarsellu úr afli</h4>
+<p>Í gefnu kennslulíkani fyrir hringlaga sólarsellu er
+<span class="latex-math">\(P=0{,}12\text{þ}^2\)</span>,
+þar sem
+<span class="latex-math">\(P\)</span>
+er afl í kW og
+<span class="latex-math">\(\text{þ}\)</span>
+þvermál í metrum. Finna á þvermál sem gefur
+<span class="latex-math">\(P=4{,}32\)</span>
+kW.
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[4{,}32=0{,}12\text{þ}^2\ \Longrightarrow\ \text{þ}^2=36
+\ \Longrightarrow\ \text{þ}=6\text{ m}.\]</span></span> Prófun:
+<span class="latex-math">\(0{,}12\cdot6^2=4{,}32\)</span>.
+Svarið gildir innan þessa líkans við tilgreinda birtu og nýtni.</p>
+</section>
+<section class="example ex-magenta" id="lota27-daemi39" data-source-title="Radíus og þvermál úr flatarmáli">
+<h4><span class="example-tag">DÆMI</span> Radíus og þvermál úr
+flatarmáli</h4>
+<p>Hringlaga svæði er
+<span class="latex-math">\(700\text{ m}^2\)</span>.
+Radíus þess er
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[r=\sqrt{\frac{700}{\pi}}\approx14{,}927\text{ m}.\]</span></span>
+Radíus er því um 15 m í heilum metrum. Ef einnig er beðið um þvermál
+reiknum við
+<span class="latex-math">\(\text{þ}=2\sqrt{700/\pi}\approx29{,}854\)</span>
+m, um 30 m. Notaðu ónámundað gildi við seinni reikninginn.</p>
+</section>
+<aside class="note">
+<p><strong>Lokaprófun orðadæmis:</strong> Er beðið um
+<span class="latex-math">\(x\)</span>,
+hlið, radíus, þvermál eða ummál? Á svarið að vera í lengdareiningum, flatarmálseiningum eða einingum fyrir afl?
+Passar svarið þegar þú setur það aftur í upphaflegu jöfnuna?</p>
+</aside>
+<nav class="lesson-nav" aria-label="Flakk eftir 6. tíma"><a href="#lota27-timi05">← 5. tími</a><a href="#lota27-yfirlit">Yfirlit</a><a href="#lota27-hugtok">Hugtök</a><a href="#lota27-timi07">7. tími →</a></nav><p class="owner">GGJ Hlíðaskóli gnajonsdottir@gmail.com</p></section><section class="lesson" id="lota27-timi07"><p class="lesson-kicker">Lota 27 · 7. tími</p><h2>RÓTAREIKNINGUR</h2>
+<p class="learning-goals"><strong>Þetta lærir þú:</strong> Að margfalda og deila ferningsrótum, einfalda þær með þáttun og finna óþekktan þátt.</p>
+<h3 id="margföldun-og-deiling">Margföldun og deiling</h3>
+<aside class="rule">
+<p><strong>FLÝTILEIÐ:</strong> Fyrir
+<span class="latex-math">\(a,b\geq0\)</span>
+gildir
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\sqrt a\sqrt b=\sqrt{ab}.\]</span></span>
+Fyrir
+<span class="latex-math">\(a\geq0\)</span>
+og
+<span class="latex-math">\(b&gt;0\)</span>
+gildir
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\frac{\sqrt a}{\sqrt b}=\sqrt{\frac ab}.\]</span></span>
+Skilyrðið
+<span class="latex-math">\(b&gt;0\)</span>
+tryggir bæði að rótin sé skilgreind og að nefnarinn sé ekki núll.</p>
+</aside>
+<p>Fyrri reglan virkar vegna þess að
+<span class="latex-math">\(\sqrt a\sqrt b\)</span>
+er ekki neikvætt og ferningur þeirrar tölu er
+<span class="latex-math">\(ab\)</span>.
+Hún er því ferningsrótin af
+<span class="latex-math">\(ab\)</span>.</p>
+<section class="example ex-green" id="lota27-daemi40" data-source-title="Sameinaðu undir eina rót">
+<h4><span class="example-tag">DÆMI</span> Sameinaðu undir eina rót</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\sqrt6\sqrt{24}=\sqrt{144}=12,\qquad
+\frac{\sqrt{128}}{\sqrt2}=\sqrt{64}=8.\]</span></span>
+Einnig er
+<span class="latex-math">\(\sqrt{19}\sqrt{19}=19\)</span>
+og
+<span class="latex-math">\(\sqrt{19^2}=19\)</span>.</p>
+</section>
+<h3 id="dragðu-ferningsþátt-út-fyrir-rót">Einfaldaðu ferningsrót með þáttun</h3>
+<p>Þegar jákvæð heil tala er undir rótartákninu leitum við að stærstu ferningstölu sem gengur upp í hana. Skrifaðu töluna sem margfeldi með þessari ferningstölu sem öðrum þættinum. Finndu síðan ferningsrót þess þáttar og skrifaðu hana framan við rótina sem eftir stendur.</p>
+<section class="example ex-cyan" id="lota27-daemi41" data-source-title="Nákvæm einföldun">
+<h4><span class="example-tag">DÆMI</span> Nákvæm einföldun</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\begin{aligned}
+\sqrt{72}&amp;=\sqrt{36\cdot2}=6\sqrt2,\\
+\sqrt{108}&amp;=\sqrt{36\cdot3}=6\sqrt3,\\
+\sqrt{48}\sqrt6&amp;=\sqrt{288}=\sqrt{144\cdot2}=12\sqrt2.
+\end{aligned}\]</span></span>
+<span class="latex-math">\(6\sqrt2\)</span>
+og
+<span class="latex-math">\(12\sqrt2\)</span>
+eru nákvæm gildi. Tugabrot með endanlegum fjölda aukastafa gefa aðeins nálgun á þessum tveimur gildum.</p>
+<figure class="math-figure" id="fig-ferningsthattur"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 315" role="img" aria-labelledby="ft-ferningsthattur fd-ferningsthattur"><title id="ft-ferningsthattur">Einfaldaðu rótina með þáttun</title><desc id="fd-ferningsthattur">72 skiptist í 36 sinnum 2. Rótin af 36 er 6 og rótin af 2 verður eftir.</desc><defs><marker id="arr-ferningsthattur" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><rect x="240" y="15" width="120" height="55" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><text x="300" y="52" text-anchor="middle" fill="#20282d" font-size="28" font-weight="normal" data-tex="72">72</text><line x1="268" y1="71" x2="180" y2="130" stroke="#20282d" stroke-width="2"></line><line x1="332" y1="71" x2="420" y2="130" stroke="#20282d" stroke-width="2"></line><rect x="115" y="135" width="130" height="55" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></rect><text x="180" y="173" text-anchor="middle" fill="#20282d" font-size="28" font-weight="normal" data-tex="36">36</text><rect x="355" y="135" width="130" height="55" fill="#dff5fd" stroke="#20282d" stroke-width="2"></rect><text x="420" y="173" text-anchor="middle" fill="#20282d" font-size="28" font-weight="normal" data-tex="2">2</text><text x="300" y="247" text-anchor="middle" fill="#20282d" font-size="27" font-weight="normal" data-tex="\sqrt{72} = \sqrt{36} \cdot  \sqrt{2} = 6\sqrt{2}">√72 = √36 · √2 = 6√2</text><text x="300" y="288" text-anchor="middle" fill="#20282d" font-size="20" font-weight="normal">36 er ferningstala og þáttur í 72.</text></g></svg><figcaption>Einfaldaðu rótina með þáttun</figcaption></figure></section>
+<section class="example ex-magenta" id="lota27-daemi42" data-source-title="Nákvæmt gildi fyrst, nálgun síðast">
+<h4><span class="example-tag">DÆMI</span> Nákvæmt gildi fyrst, nálgun
+síðast</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\sqrt6\sqrt{15}=\sqrt{90}=3\sqrt{10}\approx9{,}487.\]</span></span>
+Með deilingu fæst til dæmis
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\frac{\sqrt{54}}{\sqrt6}=\sqrt9=3,
+\qquad \frac{\sqrt{18}}{\sqrt{72}}=\sqrt{\frac14}=\frac12.\]</span></span></p>
+</section>
+<h3 id="rætur-og-samlagning">Rætur og samlagning</h3>
+<section class="example ex-green" id="lota27-daemi43" data-source-title="Reglan nær ekki yfir summu eða mismun">
+<h4><span class="example-tag">DÆMI</span> Reglan nær ekki yfir
+summu eða mismun</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\sqrt9+\sqrt{16}=3+4=7,\qquad\sqrt{9+16}=5.\]</span></span>
+Á sama hátt er
+<span class="latex-math">\(\sqrt{100}-\sqrt{36}=4\)</span>,
+en
+<span class="latex-math">\(\sqrt{100-36}=8\)</span>.
+Þú mátt sameina margfeldi og kvóta undir rót samkvæmt reglunum, en ekki
+summu eða mismun.</p>
+</section>
+<section class="example ex-cyan" id="lota27-daemi44" data-source-title="Liðir með sömu rót eftir einföldun">
+<h4><span class="example-tag">DÆMI</span> Liðir með sömu rót eftir einföldun</h4>
+<p><span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\sqrt{18}+\sqrt{50}=3\sqrt2+5\sqrt2=8\sqrt2.\]</span></span>
+Nú má leggja saman stuðlana því báðir liðir innihalda sömu rót,
+<span class="latex-math">\(\sqrt2\)</span>.
+Þetta tengist sameiningu liða í <a href="#lota27-timi03">3.
+tíma</a>.</p>
+</section>
+<h3 id="óþekktur-þáttur-eða-nefnari">Óþekktur þáttur eða nefnari</h3>
+<section class="example ex-magenta" id="lota27-daemi45" data-source-title="Hvað á að koma í auða reitinn?">
+<h4><span class="example-tag">DÆMI</span> Hvað á að koma í auða
+reitinn?</h4>
+<p>Látum
+<span class="latex-math">\(q\)</span>
+tákna óþekktu töluna.
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\sqrt8\,q=\sqrt{40}
+\ \Longrightarrow\ q=\frac{\sqrt{40}}{\sqrt8}=\sqrt5.\]</span></span>
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\sqrt{112}=q\sqrt7
+\ \Longrightarrow\ q=\sqrt{\frac{112}{7}}=4.\]</span></span>
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\sqrt6=\frac{q}{\sqrt2}
+\ \Longrightarrow\ q=\sqrt6\sqrt2=2\sqrt3.\]</span></span>
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\sqrt5=\frac{\sqrt{45}}{q}
+\ \Longrightarrow\ q\sqrt5=\sqrt{45}
+\ \Longrightarrow\ q=3.\]</span></span> Í síðustu
+jöfnunni verður
+<span class="latex-math">\(q\ne0\)</span>.
+Prófaðu með innsetningu í upphaflegu jöfnuna:
+<span class="latex-math">\(\sqrt{45}/3=3\sqrt5/3=\sqrt5\)</span>.</p>
+</section>
+<aside class="note">
+<p><strong>MUNDU:</strong>
+<span class="latex-math">\(\sqrt{x^2}=|x|\)</span>,
+ekki alltaf
+<span class="latex-math">\(x\)</span>.
+Reglan
+<span class="latex-math">\(\sqrt{ab}=\sqrt a\sqrt b\)</span>
+sem við notum hér gerir ráð fyrir
+<span class="latex-math">\(a,b\geq0\)</span>.
+Við vinnum með rauntölur.</p>
+</aside>
+<nav class="lesson-nav" aria-label="Flakk eftir 7. tíma"><a href="#lota27-timi06">← 6. tími</a><a href="#lota27-yfirlit">Yfirlit</a><a href="#lota27-hugtok">Hugtök</a><a href="#lota27-timi08">8. tími →</a></nav><p class="owner">GGJ Hlíðaskóli gnajonsdottir@gmail.com</p></section><section class="lesson" id="lota27-timi08"><p class="lesson-kicker">Lota 27 · 8. tími</p><h2>PÝÞAGÓRASARREGLA</h2>
+<p class="learning-goals"><strong>Þetta lærir þú:</strong> Að þekkja langhlið, finna óþekkta
+hlið og nota regluna við hornalínur og flatarmál.</p>
+<h3 id="rétt-horn-er-forsenda">Rétt horn er forsenda</h3>
+<p>Í <a href="#lota27-hugtak-retthyrndur" class="term-link" data-term="lota27-hugtak-retthyrndur" id="lota27-termref014">rétthyrndum þríhyrningi</a> er
+eitt hornið
+<span class="latex-math">\(90^\circ\)</span>.
+Hliðin á móti rétta horninu heitir <a href="#lota27-hugtak-langhlid" class="term-link" data-term="lota27-hugtak-langhlid" id="lota27-termref015">langhlið</a>; hinar tvær eru <a href="#lota27-hugtak-skammhlid" class="term-link" data-term="lota27-hugtak-skammhlid" id="lota27-termref016">skammhliðar</a>.</p>
+<figure class="math-figure" id="fig-grunnthrihyrningur"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 355" role="img" aria-labelledby="ft-grunnthrihyrningur fd-grunnthrihyrningur"><title id="ft-grunnthrihyrningur">Langhliðin er á móti rétta horninu</title><desc id="fd-grunnthrihyrningur">Rétthyrndur þríhyrningur með skammhliðar 4 og 3 og langhlið 5.</desc><defs><marker id="arr-grunnthrihyrningur" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><path d="M 120,280 L 426.6666666666667,280 L 120,50.0 Z" fill="#dff5fd" stroke="#20282d" stroke-width="2"></path><path d="M 120 266 h 14 v 14" fill="none" stroke="#20282d" stroke-width="2"></path><text x="273.33333333333337" y="313" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="a = 4">a = 4</text><text x="105" y="173" text-anchor="end" fill="#20282d" font-size="22" font-weight="normal" data-tex="b = 3">b = 3</text><text x="296.1" y="142.6" text-anchor="middle" fill="#0877c9" font-size="22" font-weight="normal" data-tex="c = 5">c = 5</text></g></svg><figcaption>Langhliðin er á móti rétta horninu</figcaption></figure><aside class="rule">
+<p><strong>PÝÞAGÓRASARREGLA:</strong> Ef
+<span class="latex-math">\(a,b\)</span>
+eru skammhliðar og
+<span class="latex-math">\(c\)</span>
+langhlið, þá gildir
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[a^2+b^2=c^2.\]</span></span>
+Ferningur á langhlið hefur jafn mikið flatarmál og ferningarnir á
+skammhliðunum samanlagt. Í myndinni:
+<span class="latex-math">\(4^2+3^2=16+9=25=5^2\)</span>.</p>
+</aside>
+<figure class="math-figure" id="fig-pythagoras-fletir"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 460" role="img" aria-labelledby="ft-pythagoras-fletir fd-pythagoras-fletir"><title id="ft-pythagoras-fletir">Pýþagórasarreglan sýnd með flatarmálum</title><desc id="fd-pythagoras-fletir">Rétthyrndur þríhyrningur með skammhliðar 4 og 3. Ferningar á hliðunum hafa flatarmál 16, 9 og 25 og 16+9=25.</desc><defs><marker id="arr-pythagoras-fletir" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><path d="M 200,260 L 332,260 L 332,392 L 200,392 Z" fill="#dff5fd" stroke="#20282d" stroke-width="2"></path><path d="M 200,260 L 200,161 L 101,161 L 101,260 Z" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></path><path d="M 332,260 L 200,161 L 299,29 L 431,128 Z" fill="#ffebd6" stroke="#20282d" stroke-width="2"></path><path d="M 200,260 L 332,260 L 200,161 Z" fill="white" stroke="#20282d" stroke-width="2"></path><path d="M 200 246 h 14 v 14" fill="none" stroke="#20282d" stroke-width="2"></path><text x="266" y="337" text-anchor="middle" fill="#20282d" font-size="30" font-weight="normal" data-tex="16">16</text><text x="150.5" y="221.5" text-anchor="middle" fill="#20282d" font-size="30" font-weight="normal" data-tex="9">9</text><text x="315.5" y="155.5" text-anchor="middle" fill="#20282d" font-size="30" font-weight="normal" data-tex="25">25</text><text x="266" y="249" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="4">4</text><text x="216" y="218" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="3">3</text><text x="280.4" y="198.3" text-anchor="middle" fill="#0877c9" font-size="22" font-weight="normal" data-tex="5">5</text><text x="300" y="444" text-anchor="middle" fill="#20282d" font-size="28" font-weight="bold" data-tex="16 + 9 = 25">16 + 9 = 25</text></g></svg><figcaption>Hliðarlengdir þríhyrningsins eru 3, 4 og 5. Flatarmál ferninganna eru 9, 16 og 25 ferningseiningar.</figcaption></figure><section class="example ex-green" id="lota27-daemi46" data-source-title="Langhliðin er óþekkt">
+<h4><span class="example-tag">DÆMI</span> Langhliðin er óþekkt</h4>
+<p>Skammhliðar eru 12 cm og 16 cm. Þá er
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[c^2=12^2+16^2=400,\qquad c=\sqrt{400}=20\text{ cm}.\]</span></span>
+Við leggjum ferningana saman og tökum svo rót. Við leggjum ekki bara
+hliðarlengdirnar saman.</p>
+</section>
+<section class="example ex-cyan" id="lota27-daemi47" data-source-title="Skammhliðin er óþekkt">
+<h4><span class="example-tag">DÆMI</span> Skammhliðin er óþekkt</h4>
+<p>Langhlið er 17 m og önnur skammhliðin er 8 m. Þá er
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[a^2+8^2=17^2\ \Longrightarrow\ a^2=289-64=225,
+\qquad a=15\text{ m}.\]</span></span> Við drögum frá
+þegar skammhlið er óþekkt.</p>
+</section>
+<aside class="note">
+<p><strong>ATH.:</strong> Langhliðin er á móti rétta horninu, óháð því
+hvernig myndinni er snúið. Hún er alltaf lengsta hliðin. Neikvæð tala
+undir rót í lengdarreikningi bendir oft til þess að langhliðin hafi
+verið ranglega valin.</p>
+</aside>
+<h3 id="hornalína-í-ferningi-eða-rétthyrningi">Hornalína í ferningi eða
+rétthyrningi</h3>
+<p><a href="#lota27-hugtak-hornalina" class="term-link" data-term="lota27-hugtak-hornalina" id="lota27-termref017">Hornalína</a> er strik sem tengir tvo hornpunkta marghyrnings sem eru ekki endapunktar sömu hliðar. Hún skiptir rétthyrningi í tvo rétthyrnda
+þríhyrninga.</p>
+<figure class="math-figure" id="fig-hornalina"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 330" role="img" aria-labelledby="ft-hornalina fd-hornalina"><title id="ft-hornalina">Hornalína skiptir rétthyrningi í tvo þríhyrninga</title><desc id="fd-hornalina">Hliðarnar a og b mynda rétt horn. Hornalínan d er langhlið. Almenn skýringarmynd.</desc><defs><marker id="arr-hornalina" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><rect x="100" y="45" width="330" height="220" fill="white" stroke="#20282d" stroke-width="2"></rect><line x1="100" y1="265" x2="430" y2="45" stroke="#0877c9" stroke-width="3"></line><path d="M 100 251 h 14 v 14" fill="none" stroke="#20282d" stroke-width="2"></path><text x="265" y="305" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="a">a</text><text x="453" y="160" text-anchor="start" fill="#20282d" font-size="22" font-weight="normal" data-tex="b">b</text><text x="250" y="130" text-anchor="middle" fill="#0877c9" font-size="27" font-weight="normal" data-tex="d">d</text></g></svg><figcaption>Hornalína skiptir rétthyrningi í tvo þríhyrninga</figcaption></figure><section class="example ex-green" id="lota27-daemi48" data-source-title="Hornalína með tugabrotslengdum">
+<h4><span class="example-tag">DÆMI</span> Hornalína með
+tugabrotslengdum</h4>
+<p>Rétthyrningur hefur hliðar
+<span class="latex-math">\(3{,}2\)</span>
+m og
+<span class="latex-math">\(5{,}1\)</span>
+m. Hornalínan er
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[d=\sqrt{3{,}2^2+5{,}1^2}=\sqrt{36{,}25}\approx6{,}02\text{ m}.\]</span></span>
+Í ferningi með hlið
+<span class="latex-math">\(h\)</span>
+er
+<span class="latex-math">\(d=\sqrt{2h^2}=h\sqrt2\)</span>,
+því
+<span class="latex-math">\(h&gt;0\)</span>.</p>
+</section>
+<section class="example ex-cyan" id="lota27-daemi49" data-source-title="Ummál gefið í stað annarrar hliðar">
+<h4><span class="example-tag">DÆMI</span> Ummál gefið í stað annarrar
+hliðar</h4>
+<p>Rétthyrningur hefur ummál 46 cm og lengd 14 cm. Fyrst finnum við
+breiddina
+<span class="latex-math">\(b\)</span>:
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[2(14+b)=46\ \Longrightarrow 14+b=23\ \Longrightarrow\ b=9.\]</span></span>
+Síðan fæst hornalínan
+<span class="latex-math">\(d=\sqrt{14^2+9^2}=\sqrt{277}\approx16{,}64\)</span>
+cm.</p>
+</section>
+<h3 id="flatarmál-jafnarma-þríhyrnings">Flatarmál jafnarma
+þríhyrnings</h3>
+<p>Í jafnarma þríhyrningi eru tvær hliðar jafnlangar og kallast þær armar. Hæð frá hornpunktinum milli armanna skiptir grunnlínunni í tvo jafn langa hluta. Þá má nota tvo
+rétthyrnda þríhyrninga.</p>
+<figure class="math-figure" id="fig-jafnarma"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 345" role="img" aria-labelledby="ft-jafnarma fd-jafnarma"><title id="ft-jafnarma">Hæðin helmingar grunnlínuna</title><desc id="fd-jafnarma">Jafnarma þríhyrningur með arma 17 cm og grunnlínu 16 cm; hæð er 15 cm og hálf grunnlína 8 cm.</desc><defs><marker id="arr-jafnarma" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><path d="M 188,260 L 300,50 L 412,260 Z" fill="#dff5fd" stroke="#20282d" stroke-width="2"></path><line x1="300" y1="50" x2="300" y2="260" stroke="#0877c9" stroke-width="2" stroke-dasharray="6 5"></line><path d="M 300 246 h 14 v 14" fill="none" stroke="#20282d" stroke-width="2"></path><text x="225" y="143" text-anchor="end" fill="#20282d" font-size="22" font-weight="normal" data-tex="17\,\text{cm}">17 cm</text><text x="373" y="143" text-anchor="start" fill="#20282d" font-size="22" font-weight="normal" data-tex="17\,\text{cm}">17 cm</text><text x="319" y="171" text-anchor="start" fill="#0877c9" font-size="22" font-weight="normal" data-tex="h">h</text><text x="242" y="292" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="8\,\text{cm}">8 cm</text><text x="356" y="292" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="8\,\text{cm}">8 cm</text></g></svg><figcaption>Hæðin helmingar grunnlínuna</figcaption></figure><section class="example ex-magenta" id="lota27-daemi50" data-source-title="Hæð fundin áður en flatarmál er reiknað">
+<h4><span class="example-tag">DÆMI</span> Hæð fundin áður en
+flatarmál er reiknað</h4>
+<p>Armarnir eru 17 cm og grunnlínan 16 cm. Helmingur grunnlínunnar er 8 cm:
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[h=\sqrt{17^2-8^2}=15\text{ cm},\qquad
+F=\frac{gh}{2}=\frac{16\cdot15}{2}=120\text{ cm}^2.\]</span></span></p>
+</section>
+<h3 id="þegar-hæðin-er-gefin">Þegar hæðin er gefin</h3>
+<section class="example ex-green" id="lota27-daemi51" data-source-title="Finndu hálfa grunnlínuna fyrst">
+<h4><span class="example-tag">DÆMI</span> Finndu hálfa grunnlínuna
+fyrst</h4>
+<p>Jafnarma þríhyrningur hefur 10 m langa arma og 8 m hæð. Látum
+<span class="latex-math">\(u\)</span>
+vera hálfa grunnlínuna.
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[u^2+8^2=10^2\ \Longrightarrow\ u=6\text{ m}.\]</span></span>
+Öll grunnlínan er
+<span class="latex-math">\(g=2u=12\)</span>
+m og flatarmálið
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[F=\frac{12\cdot8}{2}=48\text{ m}^2.\]</span></span>
+Ekki nota
+<span class="latex-math">\(u=6\)</span>
+sem alla grunnlínuna í flatarmálsformúlunni.</p>
+</section>
+<h3 id="frá-þríhyrningi-að-jafn-stórum-ferningi">Frá þríhyrningi að jafn
+stórum ferningi</h3>
+<section class="example ex-cyan" id="lota27-daemi52" data-source-title="Tvær formúlur í réttri röð">
+<h4><span class="example-tag">DÆMI</span> Tvær formúlur í réttri röð</h4>
+<p>Rétthyrndur þríhyrningur hefur langhlið 41 mm og aðra skammhlið 9 mm.
+Finna á hlið fernings með sama flatarmál.</p>
+<p><strong class="step">SKREF 1</strong> Hin skammhliðin er
+<span class="latex-math">\(b=\sqrt{41^2-9^2}=40\)</span>
+mm.</p>
+<p><strong class="step">SKREF 2</strong> Flatarmál þríhyrningsins er
+<span class="latex-math">\(F=9\cdot40/2=180\text{ mm}^2\)</span>.</p>
+<p><strong class="step">SKREF 3</strong> Hlið ferningsins er
+<span class="latex-math">\(h=\sqrt{180}=6\sqrt5\approx13{,}42\)</span>
+mm.</p>
+<figure class="math-figure" id="fig-jafnstor-ferningur"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 255" role="img" aria-labelledby="ft-jafnstor-ferningur fd-jafnstor-ferningur"><title id="ft-jafnstor-ferningur">Ólík lögun, sama flatarmál</title><desc id="fd-jafnstor-ferningur">Þríhyrningurinn með skammhliðar 40 mm og 9 mm og ferningurinn með hlið √180 mm hafa hvor um sig flatarmálið 180 mm².</desc><defs><marker id="arr-jafnstor-ferningur" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><path d="M 45,166 L 325,166 L 45,103 Z" fill="#dff5fd" stroke="#20282d" stroke-width="2"></path><path d="M 45 156 h 10 v 10" fill="none" stroke="#20282d" stroke-width="2"></path><line x1="343" y1="135" x2="386" y2="135" stroke="#20282d" stroke-width="2"></line><line x1="386" y1="135" x2="377.8959760788259" y2="138.91468980700108" stroke="#20282d" stroke-width="2"></line><line x1="386" y1="135" x2="377.8959760788259" y2="131.08531019299892" stroke="#20282d" stroke-width="2"></line><rect x="410" y="72.08514494500884" width="93.91485505499116" height="93.91485505499116" fill="#dcf7e5" stroke="#20282d" stroke-width="2"></rect><text x="185" y="205" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="40\,\text{mm}">40 mm</text><text x="45" y="90" text-anchor="start" fill="#20282d" font-size="20" font-weight="normal" data-tex="9\,\text{mm}">9 mm</text><text x="457" y="205" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="\sqrt{180}\,\text{mm}">√180 mm</text><text x="300" y="241" text-anchor="middle" fill="#20282d" font-size="23" font-weight="normal" data-tex="180\,\text{mm}^2 = 180\,\text{mm}^2">180 mm² = 180 mm²</text></g></svg><figcaption>Ólík lögun, sama flatarmál</figcaption></figure><p>Myndirnar eru í sama kvarða og hafa sama flatarmál, þótt þær hafi
+ólíka lögun.</p>
+</section>
+<aside class="note">
+<p><strong>MUNDU:</strong> Í flatarmálsformúlunni
+<span class="latex-math">\(F=gh/2\)</span>
+verður
+<span class="latex-math">\(h\)</span>
+að vera hornrétt á grunnlínuna
+<span class="latex-math">\(g\)</span>.
+Hlið sem liggur á ská á myndinni er ekki endilega hæð þríhyrningsins.</p>
+</aside>
+<nav class="lesson-nav" aria-label="Flakk eftir 8. tíma"><a href="#lota27-timi07">← 7. tími</a><a href="#lota27-yfirlit">Yfirlit</a><a href="#lota27-hugtok">Hugtök</a><a href="#lota27-timi09">9. tími →</a></nav><p class="owner">GGJ Hlíðaskóli gnajonsdottir@gmail.com</p></section><section class="lesson" id="lota27-timi09"><p class="lesson-kicker">Lota 27 · 9. tími</p><h2>PÝÞAGÓRASARREGLAN Í ORÐADÆMUM</h2>
+<p class="learning-goals"><strong>Þetta lærir þú:</strong> Að finna rétta þríhyrninginn í
+aðstæðum, greina milliniðurstöðu frá lokasvari og reikna
+hæðarbreytingu.</p>
+<h3 id="teiknaðu-stærðfræðilíkan">Teiknaðu stærðfræðilíkan</h3>
+<p>Veldu þríhyrninginn sem tengir þekktar stærðir við óþekktu lengdina.
+Merktu rétta hornið. Reglan gildir aðeins þegar þetta horn er rétt.</p>
+<section class="example ex-green" id="lota27-daemi53" data-source-title="Skástífa og stigi">
+<h4><span class="example-tag">DÆMI</span> Skástífa og stigi</h4>
+<p>Rétthyrndur rammi er 30 cm breiður og 40 cm hár. Skástífa milli
+gagnstæðra horna er langhlið:
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\ell=\sqrt{30^2+40^2}=50\text{ cm}.\]</span></span>
+Stigi er
+<span class="latex-math">\(3{,}7\)</span>
+m langur. Fótur hans er
+<span class="latex-math">\(1{,}2\)</span>
+m frá lóðréttum vegg. Hæðin sem hann nær er skammhlið:
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[h=\sqrt{3{,}7^2-1{,}2^2}=3{,}5\text{ m}.\]</span></span></p>
+<figure class="math-figure" id="fig-stigi"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 355" role="img" aria-labelledby="ft-stigi fd-stigi"><title id="ft-stigi">Stiginn er langhliðin</title><desc id="fd-stigi">Stigi er 3,7 m, fótur hans 1,2 m frá vegg og hæðin 3,5 m.</desc><defs><marker id="arr-stigi" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><path d="M 120,280 L 198.85714285714283,280 L 120,50.00000000000003 Z" fill="#dff5fd" stroke="#20282d" stroke-width="2"></path><path d="M 120 266 h 14 v 14" fill="none" stroke="#20282d" stroke-width="2"></path><text x="159.42857142857142" y="313" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="1{,}2\,\text{m}">1,2 m</text><text x="105" y="173" text-anchor="end" fill="#20282d" font-size="22" font-weight="normal" data-tex="h">h</text><text x="205.8" y="157.1" text-anchor="middle" fill="#0877c9" font-size="22" font-weight="normal" data-tex="3{,}7\,\text{m}">3,7 m</text></g></svg><figcaption>Stiginn er langhliðin</figcaption></figure><p>Við gerum ráð fyrir láréttu gólfi og lóðréttum vegg. Þau mynda rétt
+horn.</p>
+</section>
+<section class="example ex-cyan" id="lota27-daemi54" data-source-title="Hornalína auglýsingaspjalds">
+<h4><span class="example-tag">DÆMI</span> Hornalína auglýsingaspjalds</h4>
+<p>Auglýsingaspjald er 42 cm á breidd og 65 cm á hæð. Finna á fjarlægð milli gagnstæðra hornpunkta:
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[d=\sqrt{42^2+65^2}=\sqrt{5989}\approx77{,}39\text{ cm}.\]</span></span>
+Hornalínan er langhlið rétthyrnds þríhyrnings þar sem skammhliðarnar eru
+breidd og hæð spjaldsins.</p>
+</section>
+<section class="example ex-magenta" id="lota27-daemi55" data-source-title="Fjórar eins skástífur">
+<h4><span class="example-tag">DÆMI</span> Fjórar eins skástífur</h4>
+<p>Smíða á fjóra rétthyrnda ramma, hvern
+<span class="latex-math">\(1{,}6\)</span>
+m háan og
+<span class="latex-math">\(0{,}7\)</span>
+m breiðan. Hver rammi fær eina skástífu milli gagnstæðra horna. Hver
+stífa er
+<span class="latex-math">\(\sqrt{1{,}6^2+0{,}7^2}=\sqrt{3{,}05}\)</span>
+m.</p>
+<p>Samanlögð lengd er
+<span class="latex-math">\(4\sqrt{3{,}05}\approx6{,}99\)</span>
+m, án aukalengdar við skurð eða festingar. Námundaðu eftir
+margföldunina.</p>
+<figure class="math-figure" id="fig-fjorar-stifur"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 280" role="img" aria-labelledby="ft-fjorar-stifur fd-fjorar-stifur"><title id="ft-fjorar-stifur">Ein skástífa í hvern ramma</title><desc id="fd-fjorar-stifur">Fjórir eins rammar, hver 1,6 m hár og 0,7 m breiður. Skástífan er hornalína.</desc><defs><marker id="arr-fjorar-stifur" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif" transform="translate(18 0)"><rect x="68" y="30" width="77" height="176" fill="white" stroke="#20282d" stroke-width="2"></rect><line x1="68" y1="206" x2="145" y2="30" stroke="#0877c9" stroke-width="3"></line><path d="M 68 196 h 10 v 10" fill="none" stroke="#20282d" stroke-width="2"></path><rect x="195" y="30" width="77" height="176" fill="white" stroke="#20282d" stroke-width="2"></rect><line x1="195" y1="206" x2="272" y2="30" stroke="#0877c9" stroke-width="3"></line><path d="M 195 196 h 10 v 10" fill="none" stroke="#20282d" stroke-width="2"></path><rect x="322" y="30" width="77" height="176" fill="white" stroke="#20282d" stroke-width="2"></rect><line x1="322" y1="206" x2="399" y2="30" stroke="#0877c9" stroke-width="3"></line><path d="M 322 196 h 10 v 10" fill="none" stroke="#20282d" stroke-width="2"></path><rect x="449" y="30" width="77" height="176" fill="white" stroke="#20282d" stroke-width="2"></rect><line x1="449" y1="206" x2="526" y2="30" stroke="#0877c9" stroke-width="3"></line><path d="M 449 196 h 10 v 10" fill="none" stroke="#20282d" stroke-width="2"></path><text x="57" y="126" text-anchor="end" fill="#20282d" font-size="19" font-weight="normal" data-tex="1{,}6\,\text{m}">1,6 m</text><text x="106" y="240" text-anchor="middle" fill="#20282d" font-size="19" font-weight="normal" data-tex="0{,}7\,\text{m}">0,7 m</text><text x="365" y="248" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="4 \cdot  \sqrt{3{,}05}\,\text{m} \approx  6{,}99\,\text{m}">4 · √3,05 m ≈ 6,99 m</text></g></svg><figcaption>Ein skástífa í hvern ramma</figcaption></figure></section>
+<h3 id="pýþagóras-gefur-stundum-aðeins-hluta-svarsins">Útreikningur með Pýþagórasarreglu er stundum milliskref</h3>
+<section class="example ex-green" id="lota27-daemi56" data-source-title="Tvær leiðir milli palla">
+<h4><span class="example-tag">DÆMI</span> Tvær leiðir milli palla</h4>
+<p>Milli tveggja palla er
+<span class="latex-math">\(2{,}5\)</span>
+m hæðarmunur. Skábraut tengir þá og lárétta fjarlægðin milli enda hennar er 6 m.
+Lengd brautarinnar er langhlið:
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\ell=\sqrt{2{,}5^2+6^2}=6{,}5\text{ m}.\]</span></span>
+Þjálfunarleið liggur upp
+<span class="latex-math">\(2{,}5\)</span>
+m lóðréttan stiga og síðan niður skábrautina. Heildarlengdin er
+<span class="latex-math">\(2{,}5+6{,}5=9\)</span>
+m.</p>
+<figure class="math-figure" id="fig-skabraut"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 355" role="img" aria-labelledby="ft-skabraut fd-skabraut"><title id="ft-skabraut">Heildarleiðin er stigi og skábraut</title><desc id="fd-skabraut">Hæð palls er 2,5 m, lárétt fjarlægð 6 m og skábraut 6,5 m.</desc><defs><marker id="arr-skabraut" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><path d="M 120,280 L 480.0,280 L 120,130.0 Z" fill="#dff5fd" stroke="#20282d" stroke-width="2"></path><path d="M 120 266 h 14 v 14" fill="none" stroke="#20282d" stroke-width="2"></path><text x="300.0" y="313" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="6\,\text{m}">6 m</text><text x="105" y="205.0" text-anchor="end" fill="#20282d" font-size="22" font-weight="normal" data-tex="2{,}5\,\text{m}">2,5 m</text><text x="328.0" y="191.0" text-anchor="start" fill="#0877c9" font-size="22" font-weight="normal" data-tex="6{,}5\,\text{m}">6,5 m</text></g></svg><figcaption>Heildarleiðin er stigi og skábraut</figcaption></figure></section>
+<section class="example ex-cyan" id="lota27-daemi57" data-source-title="Hornalína ferningslaga dúks">
+<h4><span class="example-tag">DÆMI</span> Hornalína ferningslaga dúks</h4>
+<p>Hornalína ferningslaga dúks er
+<span class="latex-math">\(1{,}90\)</span>
+m. Ef hliðin er
+<span class="latex-math">\(h\)</span>,
+þá er
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[h^2+h^2=1{,}90^2\ \Longrightarrow\ 2h^2=3{,}61
+\ \Longrightarrow\ h=\sqrt{1{,}805}\approx1{,}34\text{ m}.\]</span></span>
+Ekki deila hornalínunni með 2: almenna reglan er
+<span class="latex-math">\(h=d/\sqrt2\)</span>.</p>
+</section>
+<h3 id="samanlögð-leið">Heildarvegalengd</h3>
+<section class="example ex-magenta" id="lota27-daemi58" data-source-title="Vélmenni ekur eftir hliðum þríhyrnings">
+<h4><span class="example-tag">DÆMI</span> Vélmenni ekur eftir hliðum þríhyrnings</h4>
+<p>Vélmenni ekur fyrst beint áfram, beygir síðan um
+<span class="latex-math">\(90^\circ\)</span>
+og ekur 60 m. Að lokum ekur það 109 m eftir beinni línu aftur á
+upphafsstað. Fyrsti leggurinn er
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[a=\sqrt{109^2-60^2}=91\text{ m}.\]</span></span>
+Heildarvegalengdin er
+<span class="latex-math">\(91+60+109=260\)</span>
+m. Niðurstaða rótareikningsins er aðeins fyrsti leggurinn.</p>
+<figure class="math-figure" id="fig-velmennaleid"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 355" role="img" aria-labelledby="ft-velmennaleid fd-velmennaleid"><title id="ft-velmennaleid">Þrír leggir leiðarinnar</title><desc id="fd-velmennaleid">Vélmenni fer 91 m, beygir um rétt horn og fer 60 m, síðan 109 m aftur að upphafsstað. Heild 260 m.</desc><defs><marker id="arr-velmennaleid" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><path d="M 120,280 L 468.83333333333337,280 L 120,50.0 Z" fill="#dff5fd" stroke="#20282d" stroke-width="2"></path><path d="M 120 266 h 14 v 14" fill="none" stroke="#20282d" stroke-width="2"></path><text x="294.4166666666667" y="313" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="91\,\text{m}">91 m</text><text x="105" y="173" text-anchor="end" fill="#20282d" font-size="22" font-weight="normal" data-tex="60\,\text{m}">60 m</text><text x="317.5" y="137.9" text-anchor="middle" fill="#0877c9" font-size="22" font-weight="normal" data-tex="109\,\text{m}">109 m</text><text x="390" y="341" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="91 + 60 + 109 = 260\,\text{m}">91 + 60 + 109 = 260 m</text></g></svg><figcaption>Þrír leggir leiðarinnar</figcaption></figure></section>
+<h3 id="hversu-mikið-hækkar-hangandi-lampi">Hversu mikið hækkar hangandi
+lampi?</h3>
+<section class="example ex-green" id="lota27-daemi59" data-source-title="Lengd snúru og lóðrétt fjarlægð">
+<h4><span class="example-tag">DÆMI</span> Lengd snúru og lóðrétt
+fjarlægð</h4>
+<p>Lampi hangir fyrst beint niður úr
+<span class="latex-math">\(4{,}1\)</span>
+m langri snúru. Hann er færður
+<span class="latex-math">\(0{,}9\)</span>
+m til hliðar og snúran er áfram bein og spennt. Festipunkturinn hreyfist
+ekki.</p>
+<figure class="math-figure" id="fig-hangandi-lampi"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 380" role="img" aria-labelledby="ft-hangandi-lampi fd-hangandi-lampi"><title id="ft-hangandi-lampi">Hækkun og lóðrétt fjarlægð eru ekki það sama</title><desc id="fd-hangandi-lampi">Snúran er 4,1 m, færslan 0,9 m, ný lóðrétt fjarlægð 4 m og hækkun 0,1 m. Vinstra megin er mynd í kvarða; hægra megin stækkun neðri hluta.</desc><defs><marker id="arr-hangandi-lampi" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#20282d"></path></marker></defs><g font-family="Arial, sans-serif"><line x1="95" y1="30" x2="200" y2="30" stroke="#20282d" stroke-width="4"></line><line x1="130" y1="30" x2="130" y2="296.5" stroke="#20282d" stroke-width="2" stroke-dasharray="6 5"></line><line x1="130" y1="30" x2="188.5" y2="290.0" stroke="#0877c9" stroke-width="3"></line><circle cx="188.5" cy="290.0" r="6" fill="#f4a261" stroke="#20282d" stroke-width="2"></circle><circle cx="130" cy="296.5" r="4" fill="white" stroke="#20282d" stroke-width="2"></circle><line x1="130" y1="290.0" x2="188.5" y2="290.0" stroke="#20282d" stroke-width="2" stroke-dasharray="6 5"></line><text x="116" y="170" text-anchor="end" fill="#20282d" font-size="22" font-weight="normal" data-tex="4\,\text{m}">4 m</text><text x="177" y="170" text-anchor="start" fill="#20282d" font-size="22" font-weight="normal" data-tex="4{,}1\,\text{m}">4,1 m</text><text x="170" y="330" text-anchor="middle" fill="#20282d" font-size="22" font-weight="normal" data-tex="0{,}9\,\text{m}">0,9 m</text><rect x="345" y="65" width="220" height="220" fill="#fafbfc" stroke="#b7bfc3" stroke-width="2"></rect><text x="455" y="96" text-anchor="middle" fill="#20282d" font-size="20" font-weight="normal">Stækkað</text><line x1="365" y1="241" x2="545" y2="241" stroke="#20282d" stroke-width="2" stroke-dasharray="6 5"></line><line x1="365" y1="216" x2="545" y2="216" stroke="#20282d" stroke-width="2" stroke-dasharray="6 5"></line><circle cx="515" cy="216" r="6" fill="#f4a261" stroke="#20282d" stroke-width="2"></circle><circle cx="380" cy="241" r="4" fill="white" stroke="#20282d" stroke-width="2"></circle><line x1="452" y1="216" x2="452" y2="241" stroke="#20282d" stroke-width="2"></line><text x="455" y="174" text-anchor="middle" fill="#20282d" font-size="23" font-weight="normal" data-tex="\Delta h = 0{,}1\,\text{m}">Δh = 0,1 m</text><text x="455" y="200" text-anchor="middle" fill="#20282d" font-size="23" font-weight="normal" data-tex="= 10\,\text{cm}">= 10 cm</text><text x="300" y="369" text-anchor="middle" fill="#20282d" font-size="25" font-weight="bold" data-tex="4{,}1\,\text{m} - 4\,\text{m} = 0{,}1\,\text{m}">4,1 m − 4 m = 0,1 m</text></g></svg><figcaption>Hækkun og lóðrétt fjarlægð eru ekki það sama</figcaption></figure><p><strong class="step">SKREF 1</strong> Lóðrétta fjarlægðin frá festingu að lampanum
+er skammhliðin
+<span class="latex-math">\(y\)</span>:
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[y^2+0{,}9^2=4{,}1^2\ \Longrightarrow\ y^2=16
+\ \Longrightarrow\ y=4\text{ m}.\]</span></span></p>
+<p><strong class="step">SKREF 2</strong> Áður var lampinn
+<span class="latex-math">\(4{,}1\)</span>
+m neðan við festingu. Nú er hann 4 m neðan við hana. Hækkunin er því
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\Delta h=4{,}1-4=0{,}1\text{ m}=10\text{ cm}.\]</span></span>
+Almennt, fyrir beina snúru með lengd
+<span class="latex-math">\(L\)</span>
+og lárétta færslu
+<span class="latex-math">\(a\)</span>,
+þar sem
+<span class="latex-math">\(0\leq a\leq L\)</span>:
+<span class="display-math" tabindex="0" aria-label="Reikningur"><span class="latex-math">\[\Delta h=L-\sqrt{L^2-a^2}.\]</span></span></p>
+</section>
+<aside class="note">
+<p><strong>ATH.:</strong> Rótin gefur hér nýju lóðréttu fjarlægðina frá
+festingu, ekki hækkunina. Lokaspurning orðadæmisins ræður því hvort bæta
+þarf við, draga frá eða leggja saman fleiri lengdir.</p>
+</aside>
+<nav class="lesson-nav" aria-label="Flakk eftir 9. tíma"><a href="#lota27-timi08">← 8. tími</a><a href="#lota27-yfirlit">Yfirlit</a><a href="#lota27-hugtok">Hugtök</a><a href="#lota27-gatlisti">Gátlisti →</a></nav><p class="owner">GGJ Hlíðaskóli gnajonsdottir@gmail.com</p></section><section class="book-section" id="lota27-gatlisti"><h2>GÁTLISTI LOTUNNAR</h2><p class="check-note">Merkingar vistast aðeins í þessum vafra þegar vafrageymsla er tiltæk. Engin samstilling er milli tækja.</p>
+<p>Merktu við þegar þú getur útskýrt aðferðina og notað hana
+sjálfstætt.</p>
+<h3 id="tími-ferningstölur-og-flatarmál"><a href="#lota27-timi01">1.
+tími · Ferningstölur og flatarmál</a></h3>
+<label class="check-item" for="lota27-check01"><input type="checkbox" id="lota27-check01"><span class="check-text">Ég get reiknað ferning heiltölu, brots og tugabrots og
+greint áhrif sviga.</span></label>
+<label class="check-item" for="lota27-check02"><input type="checkbox" id="lota27-check02"><span class="check-text">Ég get reiknað flatarmál hrings, fernings og litaðs
+svæðis og yfirborð tenings.</span></label>
+<h3 id="tími-ferningsrætur-og-námundun"><a href="#lota27-timi02">2. tími
+· Ferningsrætur og námundun</a></h3>
+<label class="check-item" for="lota27-check03"><input type="checkbox" id="lota27-check03"><span class="check-text">Ég get útskýrt muninn á
+<span class="latex-math">\(a^2\)</span>
+og
+<span class="latex-math">\(\sqrt a\)</span>
+og prófað ferningsrót.</span></label>
+<label class="check-item" for="lota27-check04"><input type="checkbox" id="lota27-check04"><span class="check-text">Ég get námundað að tilteknum fjölda aukastafa eða
+markverðra tölustafa.</span></label>
+<h3 id="tími-stæður-og-formúlur"><a href="#lota27-timi03">3. tími ·
+Stæður og formúlur</a></h3>
+<label class="check-item" for="lota27-check05"><input type="checkbox" id="lota27-check05"><span class="check-text">Ég get séð hvað er undir rót og slegið stæðuna rétt inn
+á vasareikni.</span></label>
+<label class="check-item" for="lota27-check06"><input type="checkbox" id="lota27-check06"><span class="check-text">Ég get sameinað liði með sömu rót, notað formúlu og reiknað breytingu á gildi.</span></label>
+<h3 id="tími-einfaldar-annars-stigs-jöfnur"><a href="#lota27-timi04">4.
+tími · Einfaldar annars stigs jöfnur</a></h3>
+<label class="check-item" for="lota27-check07"><input type="checkbox" id="lota27-check07"><span class="check-text">Ég get einangrað ferningslið og fundið báðar lausnir
+þegar þær eru til.</span></label>
+<label class="check-item" for="lota27-check08"><input type="checkbox" id="lota27-check08"><span class="check-text">Ég get valið leyfilega lausn í orðadæmi og prófað hana
+með innsetningu.</span></label>
+<h3 id="tími-jöfnur-áfram"><a href="#lota27-timi05">5. tími · Jöfnur
+áfram</a></h3>
+<label class="check-item" for="lota27-check09"><input type="checkbox" id="lota27-check09"><span class="check-text">Ég get einfaldað
+<span class="latex-math">\((kx)^2\)</span>,
+margfeldi og summur ferningsliða.</span></label>
+<label class="check-item" for="lota27-check10"><input type="checkbox" id="lota27-check10"><span class="check-text">Ég get sett upp jöfnu fyrir summu eða mismun
+flatarmála.</span></label>
+<h3 id="tími-blönduð-orðadæmi"><a href="#lota27-timi06">6. tími ·
+Blönduð orðadæmi</a></h3>
+<label class="check-item" for="lota27-check11"><input type="checkbox" id="lota27-check11"><span class="check-text">Ég get fundið hliðar, radíus, þvermál og ummál út frá
+viðeigandi gögnum.</span></label>
+<label class="check-item" for="lota27-check12"><input type="checkbox" id="lota27-check12"><span class="check-text">Ég get útskýrt hvernig hliðarlengd breytist þegar
+flatarmál margfaldast.</span></label>
+<label class="check-item" for="lota27-check13"><input type="checkbox" id="lota27-check13"><span class="check-text">Ég get einangrað óþekkta stærð í gefnu líkani og skráð
+rétta einingu.</span></label>
+<h3 id="tími-rótareikningur"><a href="#lota27-timi07">7. tími ·
+Rótareikningur</a></h3>
+<label class="check-item" for="lota27-check14"><input type="checkbox" id="lota27-check14"><span class="check-text">Ég get margfaldað og deilt rótum og nefnt skilyrði
+reglnanna.</span></label>
+<label class="check-item" for="lota27-check15"><input type="checkbox" id="lota27-check15"><span class="check-text">Ég get einfaldað ferningsrót með því að þátta töluna undir rótartákninu og gefið nákvæmt svar.</span></label>
+<label class="check-item" for="lota27-check16"><input type="checkbox" id="lota27-check16"><span class="check-text">Ég get fundið óþekktan þátt eða nefnara og prófað
+svarið.</span></label>
+<h3 id="tími-pýþagórasarregla"><a href="#lota27-timi08">8. tími ·
+Pýþagórasarregla</a></h3>
+<label class="check-item" for="lota27-check17"><input type="checkbox" id="lota27-check17"><span class="check-text">Ég get greint langhlið og skammhliðar óháð því hvernig
+mynd snýr.</span></label>
+<label class="check-item" for="lota27-check18"><input type="checkbox" id="lota27-check18"><span class="check-text">Ég get fundið óþekkta hlið, hornalínu og hæð í
+viðeigandi þríhyrningi.</span></label>
+<label class="check-item" for="lota27-check19"><input type="checkbox" id="lota27-check19"><span class="check-text">Ég get tengt lengdarreikning við flatarmál og ummál.</span></label>
+<h3 id="tími-pýþagóras-í-orðadæmum"><a href="#lota27-timi09">9. tími ·
+Pýþagórasarreglan í orðadæmum</a></h3>
+<label class="check-item" for="lota27-check20"><input type="checkbox" id="lota27-check20"><span class="check-text">Ég get teiknað rétthyrndan þríhyrning sem lýsir aðstæðum
+orðadæmis.</span></label>
+<label class="check-item" for="lota27-check21"><input type="checkbox" id="lota27-check21"><span class="check-text">Ég get reiknað heildarlengd eða hæðarbreytingu eftir að
+óþekkt hlið er fundin.</span></label>
+<h3 id="gögn-að-baki-heftinu">Gögn að baki heftinu</h3>
+<p>Efnisval og tímaskipting byggjast á verkefnablöðunum <em>27.1
+dæmi.pdf</em> til <em>27.9 dæmi.pdf</em>, lotu 27, 10. bekk. Útlit
+styðst við <em>Lesefni lota 14.pdf</em>. Skýringar, sýnidæmi og
+skýringarmyndir eru samin fyrir þetta hefti. Sýnidæmin eru ekki
+svarlykill verkefnablaðanna.</p>
+<p>Við yfirferð orðalags var haft til hliðsjónar <a href="https://vefir.mms.is/flettibaekur/namsefni/hugtakasafn_stae/">Hugtakasafn í stærðfræði</a> eftir Jón Þorvarðarson og Kristínu Bjarnadóttur, einkum skýringar á hring, hornalínu og hæð þríhyrnings.</p>
+<p class="owner">GGJ Hlíðaskóli gnajonsdottir@gmail.com</p></section><section class="book-section" id="lota27-hugtok"><h2>HUGTÖK LOTUNNAR</h2>
+<article id="lota27-hugtak-ferningstala" class="term-definition" tabindex="-1"><h3>Ferningstala</h3>
+<p>Tala sem fæst þegar heil tala er hafin í annað veldi, til dæmis
+<span class="latex-math">\(6^2=36\)</span>.
+Ferningur almennrar tölu
+<span class="latex-math">\(a\)</span>
+er margfeldið
+<span class="latex-math">\(a\cdot a\)</span>.</p>
+<p><a href="#lota27-timi01">Sjá 1. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-flatarmal" class="term-definition" tabindex="-1"><h3>Flatarmál</h3>
+<p>Stærð tvívíðs flatar, mæld í ferningseiningum, til dæmis
+cm<span class="latex-math">\(^2\)</span>.
+Ferningur:
+<span class="latex-math">\(F=h^2\)</span>.
+Rétthyrningur:
+<span class="latex-math">\(F=ab\)</span>.</p>
+<p><a href="#lota27-timi01">Sjá 1. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-hringkragi" class="term-definition" tabindex="-1"><h3>Svæði milli tveggja hringja</h3>
+<p>Hér er átt við svæðið sem liggur innan stærri hrings en utan minni hrings. Hringirnir hafa sömu miðju. Svæðið verður eftir þegar minni hringurinn er tekinn úr þeim stærri.</p>
+<p><a href="#lota27-timi01">Sjá 1. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-radius" class="term-definition" tabindex="-1"><h3>Radíus</h3>
+<p>Radíus er strik frá miðju hrings að punkti á hringnum; einnig er orðið notað um lengd striksins. Radíus er oft táknaður með <span class="latex-math">\(r\)</span>. Flatarmál hrings er <span class="latex-math">\(F=\pi r^2\)</span>.</p>
+<p><a href="#lota27-timi01">Sjá 1. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-thvermal" class="term-definition" tabindex="-1"><h3>Þvermál</h3>
+<p>Strik milli tveggja punkta á hringferli sem liggur gegnum miðju
+hringsins; einnig lengd þess. Hér táknum við þvermál með <span class="latex-math">\(\text{þ}\)</span>. Þvermál er tvöfaldur radíus:
+<span class="latex-math">\(\text{þ}=2r\)</span>.</p>
+<p><a href="#lota27-timi01">Sjá 1. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-pi" class="term-definition" tabindex="-1"><h3>Talan
+<span class="latex-math">\(\pi\)</span></h3>
+<p>Hlutfall ummáls hrings og þvermáls hans.
+<span class="latex-math">\(\pi\approx3{,}14159\)</span>.
+Notaðu
+<span class="latex-math">\(\pi\)</span>-hnapp
+í útreikningum.</p>
+<p><a href="#lota27-timi01">Sjá 1. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-yfirbord" class="term-definition" tabindex="-1"><h3>Yfirborðsflatarmál</h3>
+<p>Samanlagt flatarmál allra ytri flata hlutar. Fyrir tening með brún
+<span class="latex-math">\(h\)</span>
+er það
+<span class="latex-math">\(6h^2\)</span>.</p>
+<p><a href="#lota27-timi01">Sjá 1. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-ferningsrot" class="term-definition" tabindex="-1"><h3>Ferningsrót</h3>
+<p>Ferningsrót tölu er talan sem er núll eða jákvæð og gefur upphaflegu töluna þegar hún er margfölduð með sjálfri sér. Til dæmis er <span class="latex-math">\(\sqrt{36}=6\)</span>, því <span class="latex-math">\(6^2=36\)</span>. Neikvæðar tölur eiga sér ekki ferningsrót í rauntölum.</p>
+<p><a href="#lota27-timi02">Sjá 2. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-algildi" class="term-definition" tabindex="-1"><h3>Algildi</h3>
+<p>Fjarlægð tölu frá núlli á talnalínu.
+<span class="latex-math">\(|-5|=5\)</span>
+og
+<span class="latex-math">\(|5|=5\)</span>.
+Því er
+<span class="latex-math">\(\sqrt{x^2}=|x|\)</span>.</p>
+<p><a href="#lota27-timi02">Sjá 2. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-nakvaemt" class="term-definition" tabindex="-1"><h3>Nákvæmt gildi og nálgun</h3>
+<p><span class="latex-math">\(\sqrt7\)</span>
+er nákvæmt gildi;
+<span class="latex-math">\(2{,}646\)</span>
+er námunduð nálgun þess. Táknið
+<span class="latex-math">\(=\)</span>
+merkir jafnt og;
+<span class="latex-math">\(\approx\)</span>
+merkir um það bil jafnt og.</p>
+<p><a href="#lota27-timi02">Sjá 2. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-aukastafir" class="term-definition" tabindex="-1"><h3>Aukastafir</h3>
+<p>Tölustafir hægra megin við tugabrotskommu. Talan
+<span class="latex-math">\(4{,}250\)</span>
+er skrifuð með þremur aukastöfum.</p>
+<p><a href="#lota27-timi02">Sjá 2. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-markverdir" class="term-definition" tabindex="-1"><h3>Markverðir tölustafir</h3>
+<p>Tölustafir sem lýsa nákvæmni tölu, taldir frá fyrsta staf sem er ekki
+núll. Í
+<span class="latex-math">\(0{,}00420\)</span>
+eru þrír: 4, 2 og síðasta 0.</p>
+<p><a href="#lota27-timi02">Sjá 2. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-studull" class="term-definition" tabindex="-1"><h3>Stuðull</h3>
+<p>Tala sem breyta eða stæða er margfölduð með. Í <span class="latex-math">\(7x^2\)</span> og <span class="latex-math">\(7\sqrt6\)</span> er stuðullinn 7.</p>
+<p><a href="#lota27-timi03">Sjá 3. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-rotarlidir" class="term-definition" tabindex="-1"><h3>Liðir með sömu rót</h3>
+<p>Liði má sameina með samlagningu eða frádrætti stuðla þegar rótin er sú sama eftir einföldun. Til dæmis er <span class="latex-math">\(2\sqrt5+7\sqrt5=9\sqrt5\)</span>. Stuðlarnir leggjast saman en rótin helst óbreytt.</p>
+<p><a href="#lota27-timi03">Sjá 3. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-formula" class="term-definition" tabindex="-1"><h3>Formúla</h3>
+<p>Jafna sem lýsir tengslum stærða. Í formúlunni <span class="latex-math">\(F=ab\)</span> er flatarmál rétthyrnings táknað með <span class="latex-math">\(F\)</span> og hliðarlengdir hans með <span class="latex-math">\(a\)</span> og <span class="latex-math">\(b\)</span>.</p>
+<p><a href="#lota27-timi03">Sjá 3. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-annarsstigs" class="term-definition" tabindex="-1"><h3>Annars stigs jafna</h3>
+<p>Jafna sem má umrita þannig að allir liðir standi öðrum megin við jafnaðarmerkið og núll hinum megin. Eftir einföldun er hæsta veldi óþekktunnar 2 og stuðull þess liðar er ekki núll. Í þessu hefti leysum við jöfnur sem má umrita á formið <span class="latex-math">\(x^2=k\)</span>.</p>
+<p><a href="#lota27-timi04">Sjá 4. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-einangrun" class="term-definition" tabindex="-1"><h3>Einangrun</h3>
+<p>Að framkvæma sömu leyfilegu aðgerð á báðum hliðum jöfnu þar til
+óþekkta stærðin eða tiltekinn liður stendur einn öðrum megin.</p>
+<p><a href="#lota27-timi04">Sjá 4. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-lausn" class="term-definition" tabindex="-1"><h3>Lausn jöfnu</h3>
+<p>Gildi sem gerir jöfnuna sanna við innsetningu. Táknið
+<span class="latex-math">\(\pm\)</span>
+stendur fyrir bæði plús og mínus:
+<span class="latex-math">\(x=\pm3\)</span>
+merkir
+<span class="latex-math">\(x=3\)</span>
+eða
+<span class="latex-math">\(x=-3\)</span>.</p>
+<p><a href="#lota27-timi04">Sjá 4. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-ummal" class="term-definition" tabindex="-1"><h3>Ummál</h3>
+<p>Lengd útlínu flatar. Ferningur:
+<span class="latex-math">\(U=4h\)</span>.
+Rétthyrningur:
+<span class="latex-math">\(U=2(a+b)\)</span>.
+Mælt í lengdareiningum, ekki ferningseiningum.</p>
+<p><a href="#lota27-timi06">Sjá 6. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-ferningsthattur" class="term-definition" tabindex="-1"><h3>Þáttur sem er ferningstala</h3>
+<p>Þegar tala er skrifuð sem margfeldi kallast tölurnar sem margfaldaðar eru saman þættir. Í <span class="latex-math">\(72=36\cdot2\)</span> er 36 bæði þáttur í 72 og ferningstala. Því má skrifa <span class="latex-math">\(\sqrt{72}=\sqrt{36}\cdot\sqrt2=6\sqrt2\)</span>.</p>
+<p><a href="#lota27-timi07">Sjá 7. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-retthyrndur" class="term-definition" tabindex="-1"><h3>Rétthyrndur þríhyrningur</h3>
+<p>Þríhyrningur með eitt rétt horn,
+<span class="latex-math">\(90^\circ\)</span>.
+Pýþagórasarregla gildir fyrir slíka þríhyrninga.</p>
+<p><a href="#lota27-timi08">Sjá 8. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-langhlid" class="term-definition" tabindex="-1"><h3>Langhlið</h3>
+<p>Hliðin á móti rétta horninu í rétthyrndum þríhyrningi. Hún er lengsta
+hliðin.</p>
+<p><a href="#lota27-timi08">Sjá 8. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-skammhlid" class="term-definition" tabindex="-1"><h3>Skammhliðar</h3>
+<p>Hliðarnar tvær sem mynda rétta hornið í rétthyrndum þríhyrningi.</p>
+<p><a href="#lota27-timi08">Sjá 8. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-pythagoras" class="term-definition" tabindex="-1"><h3>Pýþagórasarregla</h3>
+<p>Ef
+<span class="latex-math">\(a,b\)</span>
+eru skammhliðar og
+<span class="latex-math">\(c\)</span>
+er langhlið, þá er
+<span class="latex-math">\(a^2+b^2=c^2\)</span>.</p>
+<p><a href="#lota27-timi08">Sjá 8. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-hornalina" class="term-definition" tabindex="-1"><h3>Hornalína</h3>
+<p>Strik sem tengir tvo hornpunkta marghyrnings sem eru ekki endapunktar sömu hliðar. Í rétthyrningi með hliðarlengdir <span class="latex-math">\(a\)</span> og <span class="latex-math">\(b\)</span> er lengd hornalínunnar <span class="latex-math">\(d=\sqrt{a^2+b^2}\)</span>.</p>
+<p><a href="#lota27-timi08">Sjá 8. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-jafnarma" class="term-definition" tabindex="-1"><h3>Jafnarma þríhyrningur</h3>
+<p>Þríhyrningur með tvær jafnlangar hliðar sem kallast armar. Þriðja hliðin kallast grunnlína. Hæð frá hornpunktinum milli armanna skiptir grunnlínunni í tvo jafn langa hluta.</p>
+<p><a href="#lota27-timi08">Sjá 8. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-haed" class="term-definition" tabindex="-1"><h3>Hæð þríhyrnings</h3>
+<p>Strik frá hornpunkti þríhyrnings hornrétt á mótlæga hlið eða framlengingu hennar; einnig lengd striksins. Mótlæga hliðin er þá grunnlínan. Flatarmálið er <span class="latex-math">\(F=gh/2\)</span>, þar sem <span class="latex-math">\(g\)</span> er lengd grunnlínunnar og <span class="latex-math">\(h\)</span> samsvarandi hæð.</p>
+<p><a href="#lota27-timi08">Sjá 8. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><article id="lota27-hugtak-haedarbreyting" class="term-definition" tabindex="-1"><h3>Hæðarbreyting</h3>
+<p>Ný hæð að frádreginni fyrri hæð, miðað við sama viðmið í bæði skiptin. Þegar lampi er færður til hliðar styttist lóðrétta fjarlægðin frá festingunni að lampanum og lampinn hækkar.</p>
+<p><a href="#lota27-timi09">Sjá 9. tíma.</a></p>
+<button type="button" class="back-to-term" hidden="hidden">← Til baka í textann</button></article><p class="owner">GGJ Hlíðaskóli gnajonsdottir@gmail.com</p></section></main><script>
+(()=>{'use strict';
+const origins=new Map();
+// Keep navigation inside this document. Native fragment jumps and
+// scrollIntoView can also scroll the hidden containers around a Sites embed.
+function scrollWithinBook(destination,center=false){
+ const toolbar=document.querySelector('.toolbar');
+ const inset=(toolbar?toolbar.getBoundingClientRect().height:0)+16;
+ const bounds=destination.getBoundingClientRect();
+ const offset=center?Math.max(inset,(window.innerHeight-bounds.height)/2):inset;
+ const top=Math.max(0,window.scrollY+bounds.top-offset);
+ if(!destination.hasAttribute('tabindex')&&!destination.matches('a[href],button,input,select,textarea')){
+  destination.setAttribute('tabindex','-1');
+  destination.addEventListener('blur',()=>destination.removeAttribute('tabindex'),{once:true});
+ }
+ destination.focus({preventScroll:true});
+ window.scrollTo({top,left:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+ // History updates do not cause a fragment jump. Some embedded environments
+ // disallow them; scrolling and focus must still work in that case.
+ try{history.replaceState(null,'','#'+encodeURIComponent(destination.id));}catch{}
+}
+document.addEventListener('click',event=>{
+ if(event.defaultPrevented||event.button!==0||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
+ const link=event.target.closest('a[href^="#"]');
+ if(!link||link.hasAttribute('download')||(link.target&&link.target!=='_self'))return;
+ let id;try{id=decodeURIComponent(link.getAttribute('href').slice(1));}catch{return;}
+ const destination=document.getElementById(id);if(!destination)return;
+ event.preventDefault();
+ if(link.dataset.term){
+  origins.set(id,link.id);
+  const back=destination.querySelector('.back-to-term');if(back)back.hidden=false;
+ }
+ scrollWithinBook(destination);
+});
+document.querySelectorAll('.back-to-term').forEach(button=>button.addEventListener('click',()=>{
+ const term=button.closest('.term-definition');const source=document.getElementById(origins.get(term.id));
+ if(source)scrollWithinBook(source,true);
+}));
+const storeKey='lota27-checklist-2026-09-27-v1';const checks=[...document.querySelectorAll('.check-item input')];
+try{const saved=JSON.parse(localStorage.getItem(storeKey)||'[]');if(Array.isArray(saved))checks.forEach(c=>{c.checked=saved.includes(c.id);});}catch{}
+checks.forEach(c=>c.addEventListener('change',()=>{try{localStorage.setItem(storeKey,JSON.stringify(checks.filter(x=>x.checked).map(x=>x.id)));}catch{}}));
+})();
+</script></body></html>
