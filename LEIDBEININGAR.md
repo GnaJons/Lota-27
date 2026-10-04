@@ -1,43 +1,30 @@
-# Lota 27 á GitHub Pages
+# Lota 27 · Ferningar, rætur og Pýþagóras
 
-G. · Hlíðaskóli · gnajonsdottir@gmail.com
+## Opna heftið
 
-Pakkinn inniheldur index.html (vefheftið), lota27-prent.pdf (38 síðna prenthefti) og þessar leiðbeiningar.
+Afþjappaðu pakkanum og opnaðu `index.html` í nýlegum vafra. Haltu öllum skrám pakkans saman í sömu möppu. Formúlur og myndir eru innbyggðar í síðuna. Myndbandið í 8. tíma fylgir í `videos/pythagoras.mp4`; haltu `videos` möppunni við hlið `index.html`. Þá virkar heftið og myndbandið án nettengingar.
 
-## Setja upp í vafra
+Veldu tíma í yfirlitinu. Appelsínugul hugtök opna skýringu aftast í heftinu; „Til baka í textann“ leiðir aftur í nákvæmlega sama stað. Gátlistinn er aftan við tímana og merkingar vistast í vafranum þegar vafrageymsla er tiltæk.
 
-1. Afþjappaðu ZIP-skránni á tölvunni.
-2. Á GitHub, búðu til nýtt repository, til dæmis `lota27`. Ef þú notar GitHub Free skaltu velja Public. Þá verða bæði vefurinn og skrárnar opinber. Bættu README við við stofnun til að fá main-grein strax.
-3. Veldu Add file → Upload files. Settu index.html og lota27-prent.pdf beint í efsta lag repository, hlið við hlið. Hladdu skránum upp úr afþjappaða pakkanum, ekki ZIP-skránni sjálfri. Veldu Commit changes.
-4. Opnaðu Settings → Pages. Undir Build and deployment velurðu Source: Deploy from a branch, Branch: main og Folder: /(root). Veldu Save.
-5. Bíddu þar til GitHub birtir tengil á síðuna undir Settings → Pages og veldu Visit site. Fyrsta birting getur tekið allt að 10 mínútur.
-6. Prófaðu Hugtök, Til baka í textann, kaflatengla og Sækja PDF til prentunar á birtu síðunni.
+## Prenta
 
-## Leið nemenda að heftinu
+Veldu „Sækja PDF til prentunar“ eða opnaðu `lota27-prent.pdf`. Þetta er 44 síðna prenthefti fyrir alla tíu dæmatímana með sama námsefni og vefurinn. Blaðstærð og spássíur fylgja samþykktum Lota 28 stíl: Letter. Við prentun á A4 skal velja að laga síðuna að pappírnum.
 
-Deildu GitHub Pages-slóðinni beint. Ef þú vilt halda Google Sites sem inngangssíðu má setja þar venjulegan tengil eða hnapp sem opnar GitHub Pages-heftið. Við slíka opnun er heftið sjálfstæð vefsíða og Google Sites-innfellingin er ekki hluti af birtingunni.
+## Uppfæra eldri vef
 
-## Uppfærsla og PDF
+Skiptu út `index.html` og `lota27-prent.pdf` saman og bættu við `gatlisti-flutningur.html` og `videos` möppunni. Myndbandið þarf að vera aðgengilegt á afstæðu slóðinni `videos/pythagoras.mp4`. Opnaðu síðan uppfærðu síðuna og prófaðu PDF-hnappinn.
 
-Skráin index.html er upphafssíða vefsins. PDF-hnappurinn vísar á lota27-prent.pdf í sömu möppu. Þegar námsefni breytist þarf að uppfæra báðar skrár svo vefhefti og prentútgáfa haldist í takt.
+Ef nemandi á eldri gátlistamerkingar skal hann fyrst velja „Flytja eldri gátlistamerkingar“ við gátlistann, áður en hann merkir ný atriði. Flutningurinn þarf að fara fram í sama vafra og á sömu vefslóð og áður. Hann tekur afrit af eldri merkingunum og færir þær á nýja sniðið. Vafrageymsla flyst ekki sjálfkrafa milli tækja eða vefslóða.
 
-MathJax birtir formúlur á vefsíðunni og hleðst af neti. PDF-skráin inniheldur formúlur og myndir og má prenta án nettengingar. Gátlisti vistast aðeins í vafra nemandans þegar vafrageymsla er tiltæk.
+Pakkinn er tilbúinn til staðbundinnar notkunar eða uppfærslu á núverandi hýsingu. Engin vefbirting var framkvæmd með þessari afhendingu.
 
-## Breytingar 28. september 2026
+## Skrár
 
-- Línan „9 tímar“ undir undirfyrirsögninni var fjarlægð.
-- Algildi er útskýrt með fjarlægð frá núlli, lóðréttu strikunum og einföldum dæmum. Tveir tenglar úr lesefninu vísa í skýringuna.
-- Nýr hugtakakafli útskýrir minna en, stærra en og jafnt og, með dæmum og minnishjálpinni „Opið snýr að stærri tölunni“. Táknin ≤ og ≥ eru einnig útskýrð.
-- Prentútgáfan hefur sömu hugtakaskýringar; skýringin á algildi í 2. tíma er stytt til að rúmast í núverandi uppsetningu.
-- Vatnsmerki er samræmt: G. · Hlíðaskóli · gnajonsdottir@gmail.com.
+- `index.html`: vefheftið.
+- `videos/pythagoras.mp4`: sjónræn útskýring á reglu Pýþagórasar í 8. tíma, um 1 mínúta og 52 sekúndur.
+- `lota27-prent.pdf`: prentútgáfan.
+- `gatlisti-flutningur.html`: flutningur eldri gátlistamerkinga.
+- `KENNARANOTA.md`: yfirlit breytinga og prófana.
+- `LEIDBEININGAR.md`: þessar leiðbeiningar.
 
-## Prófunarstaða
-
-Allir 114 innri HTML-tenglar hafa gild viðföng og öll 286 auðkenni eru einstök. Níu kennslukaflar, 59 sýnidæmi, 25 myndir og 21 atriði í gátlista varðveitast. Hugtakafærslur eru nú 29. Prentútgáfan var myndgerð og yfirfarin, sérstaklega breyttu síðurnar og hugtakakaflinn. Innri PDF-tenglar voru uppfærðir eftir breytta síðuskiptingu hugtakanna.
-
-Ekki tókst að ræsa staðbundinn vafra í þessari yfirferð; nýju tenglarnir nota óbreytt flakksrök. Skjá- og farsímabirting, MathJax-hleðsla og flakk með JavaScript voru því ekki endurprófuð í vafra. Þessi útgáfa hefur ekki verið birt eða prófuð á GitHub Pages; skref 6 er lokaprófun eftir birtingu.
-
-## Opinberar leiðbeiningar
-
-- https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
-- https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+Myndbandið birtist aðeins á vefnum og fer ekki með í prentun. Prentútgáfan er áfram 44 síður.
